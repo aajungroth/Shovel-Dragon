@@ -281,3 +281,9 @@ Received Import Request.
   path: Assets/Sprites/Door/Locked Door.png
   artifactKey: Guid(8752cb5e4a68f4199acb49427012bd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Door/Locked Door.png using Guid(8752cb5e4a68f4199acb49427012bd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1410269b3300eba3263c117c6f9a00a8') in 0.049993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.103475 seconds.
+  path: Assets/Sprites/Door/Unlocked Door.png
+  artifactKey: Guid(708e22ae704864345a14ac7e5d95bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/Unlocked Door.png using Guid(708e22ae704864345a14ac7e5d95bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68fefd7066dc58e344bfe4115463fd71') in 0.042209 seconds 
