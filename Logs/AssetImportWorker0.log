@@ -203,3 +203,15 @@ Received Import Request.
   path: Assets/Sprites/Shovel Dragon Movement
   artifactKey: Guid(3fa1a6cad15e247fe82c0defc5fcf085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Shovel Dragon Movement using Guid(3fa1a6cad15e247fe82c0defc5fcf085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b51d1f1a6ad3e24ad138339e7f15ad') in 0.011427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 261.235054 seconds.
+  path: Assets/Sprites/New Folder
+  artifactKey: Guid(c849cf6292b424162a672470daa2c85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/New Folder using Guid(c849cf6292b424162a672470daa2c85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6f5cadc98628fb72df4cd82494a5043') in 0.009383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.121244 seconds.
+  path: Assets/Sprites/Shovel Dragon
+  artifactKey: Guid(c849cf6292b424162a672470daa2c85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Shovel Dragon using Guid(c849cf6292b424162a672470daa2c85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a5320066a1f0452e2af2c20dfb877d') in 0.002466 seconds 
