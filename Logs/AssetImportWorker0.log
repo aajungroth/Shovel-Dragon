@@ -299,3 +299,9 @@ Received Import Request.
   path: Assets/Sprites/Power Up
   artifactKey: Guid(95ccb236481bc4581a25c87c6270c7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Power Up using Guid(95ccb236481bc4581a25c87c6270c7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45d589bf222674e1d71b3ee5ac08502') in 0.005064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.321157 seconds.
+  path: Assets/Sprites/Power Up/Shovel Dragon Map.png
+  artifactKey: Guid(8c1656fff8f7b41f68bcf770251d15c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Power Up/Shovel Dragon Map.png using Guid(8c1656fff8f7b41f68bcf770251d15c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc91061932218218b15df7f413aeb3d') in 0.078138 seconds 
