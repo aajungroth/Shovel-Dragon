@@ -269,3 +269,9 @@ Received Import Request.
   path: Assets/Sprites/Ground/Block Tile.png
   artifactKey: Guid(786a22c0659d64792b2d63d083f01d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Ground/Block Tile.png using Guid(786a22c0659d64792b2d63d083f01d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf959bce376562d47dc1748f7425160') in 0.045192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 170.959466 seconds.
+  path: Assets/Sprites/Door
+  artifactKey: Guid(2453468ca643446f0b8a5f21fc1e7c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door using Guid(2453468ca643446f0b8a5f21fc1e7c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f0f55d339f70805544a9ed3fb4bafc') in 0.003374 seconds 
