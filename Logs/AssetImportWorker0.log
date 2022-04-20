@@ -185,3 +185,9 @@ Received Import Request.
   path: Assets/Sprites/Shovel Dragon Back.png
   artifactKey: Guid(920b5b84297b74a4c9bc667334892137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Shovel Dragon Back.png using Guid(920b5b84297b74a4c9bc667334892137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b253ec16b9328e9aa5bca067f10a27f') in 0.170380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 187.261560 seconds.
+  path: Assets/Sprites/Shovel Dragon.png
+  artifactKey: Guid(67b7d255287d84a688a8bd4aaed2cbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Shovel Dragon.png using Guid(67b7d255287d84a688a8bd4aaed2cbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33c8c08d3f9093ad6716996795b4449') in 0.117075 seconds 
