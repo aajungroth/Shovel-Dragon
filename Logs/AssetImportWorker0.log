@@ -1067,3 +1067,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 76.021935 seconds.
+  path: Assets/Scenes/LevelSelectScene.unity
+  artifactKey: Guid(03d974551c7984606965ac35b95f2a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LevelSelectScene.unity using Guid(03d974551c7984606965ac35b95f2a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b160130c6115798caac86a4c994bdbd') in 0.009340 seconds 
