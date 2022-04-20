@@ -797,3 +797,9 @@ Received Import Request.
   path: Assets/Scenes/LevelSelectScene.unity
   artifactKey: Guid(03d974551c7984606965ac35b95f2a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/LevelSelectScene.unity using Guid(03d974551c7984606965ac35b95f2a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b8cccceead5c68dabbce434cdf6965') in 0.006001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 209.769197 seconds.
+  path: Assets/Scenes/TutorialScene.unity
+  artifactKey: Guid(fde2729ecf620452cba871c917bf4ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TutorialScene.unity using Guid(fde2729ecf620452cba871c917bf4ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb27202d2420a23b362313990fed1ba') in 0.010361 seconds 
