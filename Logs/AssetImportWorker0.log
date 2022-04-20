@@ -323,3 +323,9 @@ Received Import Request.
   path: Assets/Sprites/Enemy/Crab/Crab.png
   artifactKey: Guid(ce1ffd17a716a424a8a1d66a974e44c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Enemy/Crab/Crab.png using Guid(ce1ffd17a716a424a8a1d66a974e44c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '916fdc5be08fcd7c30f55ff7f661cb6e') in 0.056013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.662875 seconds.
+  path: Assets/Sprites/Enemy/Crab/Crab Rotated.png
+  artifactKey: Guid(5c7803804aaaa47d2b745996b7c7e1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Enemy/Crab/Crab Rotated.png using Guid(5c7803804aaaa47d2b745996b7c7e1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b350dd424699a3029f6a0380afd6ec65') in 0.044257 seconds 
