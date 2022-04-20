@@ -293,3 +293,9 @@ Received Import Request.
   path: Assets/Sprites/Door/Shovel Dragon Key.png
   artifactKey: Guid(197824f6db9c54dbba595e411359bdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Door/Shovel Dragon Key.png using Guid(197824f6db9c54dbba595e411359bdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ff54cf3be1b44e5bcd01ca98b64d00') in 0.044603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 112.703840 seconds.
+  path: Assets/Sprites/Power Up
+  artifactKey: Guid(95ccb236481bc4581a25c87c6270c7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Power Up using Guid(95ccb236481bc4581a25c87c6270c7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45d589bf222674e1d71b3ee5ac08502') in 0.005064 seconds 
