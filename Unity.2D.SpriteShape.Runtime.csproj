@@ -47,26 +47,26 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\Tess.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\UTess2D\Tessellator.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\SpriteShapeGenerator.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\SplineUtility.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\Dict.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\BezierUtility.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\Spline.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\PriorityHeap.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\SpriteShapeController.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\UTess2D\ArraySlice.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\SpriteShape.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\Sweep.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\Mesh.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\AssemblyInfo.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\SpriteShapeGeometryCache.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\Geom.cs" />
-     <Compile Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\MeshUtils.cs" />
-     <None Include="Packages\com.unity.2d.spriteshape\Runtime\External\LibTessDotNet\LICENSE.txt" />
-     <None Include="Packages\com.unity.2d.spriteshape\Runtime\Unity.2D.SpriteShape.Runtime.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\Tess.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\UTess2D\Tessellator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\SpriteShapeGenerator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\SplineUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\Dict.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\BezierUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\Spline.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\PriorityHeap.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\SpriteShapeController.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\UTess2D\ArraySlice.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\SpriteShape.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\Sweep.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\Mesh.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\SpriteShapeGeometryCache.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\Geom.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\MeshUtils.cs" />
+     <None Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\External\LibTessDotNet\LICENSE.txt" />
+     <None Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Runtime\Unity.2D.SpriteShape.Runtime.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -295,6 +295,12 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -306,6 +312,12 @@
  </Reference>
  <Reference Include="log4netPlastic">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
