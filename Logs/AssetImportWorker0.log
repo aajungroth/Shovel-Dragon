@@ -801,3 +801,9 @@ Received Import Request.
   path: Assets/Sprites/Ground/Ground Tile With Large Hole.png
   artifactKey: Guid(024a0cd29caef4562afb2c86c772bf68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Sprites/Ground/Ground Tile With Large Hole.png using Guid(024a0cd29caef4562afb2c86c772bf68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa1e785a75906bb540999376757fb65') in 0.121690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 112.407358 seconds.
+  path: Assets/Sprites/Ground/Ground Tile With Medium Hole.png
+  artifactKey: Guid(da9481f8ab3d9436aa829dc883d43e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ground/Ground Tile With Medium Hole.png using Guid(da9481f8ab3d9436aa829dc883d43e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f1d7bf51162f99c00515f587d6825b') in 0.070562 seconds 
