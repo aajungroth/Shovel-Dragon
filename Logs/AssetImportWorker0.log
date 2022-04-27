@@ -825,3 +825,9 @@ Received Import Request.
   path: Assets/Palletes/Tilemap Base.prefab
   artifactKey: Guid(51e537538f84e47649aef2bd1f73c2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Palletes/Tilemap Base.prefab using Guid(51e537538f84e47649aef2bd1f73c2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a441fb4d8912012f8b1d8144c0406b') in 1.923622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.909974 seconds.
+  path: Assets/Palletes/Ground Tiles.prefab
+  artifactKey: Guid(f2ea6bffe29e14c63b023ffcc2eb23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Palletes/Ground Tiles.prefab using Guid(f2ea6bffe29e14c63b023ffcc2eb23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775ea9460f85a555489169ff0b55b920') in 0.204745 seconds 
