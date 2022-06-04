@@ -47,10 +47,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.2d.common\Editor\InternalBridge\InternalEditorBridge.cs" />
-     <Compile Include="Packages\com.unity.2d.common\Editor\InternalBridge\AssemblyInfo.cs" />
-     <Compile Include="Packages\com.unity.2d.common\Editor\InternalBridge\TexturePlatformSettings\TexturePlatformSettings.cs" />
-     <None Include="Packages\com.unity.2d.common\Editor\InternalBridge\InternalBridgeDef.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.2d.common@4.1.0\Editor\InternalBridge\InternalEditorBridge.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.common@4.1.0\Editor\InternalBridge\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.common@4.1.0\Editor\InternalBridge\TexturePlatformSettings\TexturePlatformSettings.cs" />
+     <None Include="Library\PackageCache\com.unity.2d.common@4.1.0\Editor\InternalBridge\InternalBridgeDef.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -279,6 +279,12 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -293,6 +299,12 @@
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
