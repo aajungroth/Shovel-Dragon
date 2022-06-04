@@ -16,30 +16,39 @@ public class GridMovement : MonoBehaviour {
 
   // Start is called before the first frame update
   void Start() {
-    buttonUp.onClick.AddListener(validateMove, Vector3.up);
-    buttonRight.onClick.AddListener(validateMove, Vector3.right);
-    buttonDown.onClick.AddListener(validateMove, Vector3.down);
-    buttonLeft.onClick.AddListener(validateMove, Vector3.left);
+    buttonUp.onClick.AddListener(validateMoveUp);
+    buttonRight.onClick.AddListener(validateMoveRight);
+    buttonDown.onClick.AddListener(validateMoveDown);
+    buttonLeft.onClick.AddListener(validateMoveLeft);
   }
 
   // Update is called once per frame
   void Update() {
     
   }
-  
-  private void validateMove(Vector3 direction) {  
-    if (!isMoving && direction == up) {
+
+  private void validateMoveUp() {
+    if (!isMoving) {
       StartCoroutine(MovePlayer(Vector3.up));
     }
-    else if (!isMoving && direction == right) {
+  }
+
+  private void validateMoveRight() {
+    if (!isMoving) {
       StartCoroutine(MovePlayer(Vector3.right));
     }
-    else if (!isMoving && direction == down) {
+  }
+
+  private void validateMoveDown() {
+    if (!isMoving) {
       StartCoroutine(MovePlayer(Vector3.down));
     }
-    else if (!isMoving && direction == left) {
+  }
+
+  private void validateMoveLeft() {
+   if (!isMoving) {
       StartCoroutine(MovePlayer(Vector3.left));
-    }
+    } 
   }
 
   private IEnumerator MovePlayer(Vector3 direction) {
