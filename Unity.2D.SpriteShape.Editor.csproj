@@ -47,27 +47,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\AngleRangeView.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\ContextMenu.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\ObjectMenuCreation\GameObjectCreation.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\AssemblyInfo.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeEditor.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeEditorTool.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\EditorSpriteGUIUtility.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeAnalytics.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeEditorGUI.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\ObjectMenuCreation\AssetCreation.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeControllerEditor.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteSelector.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SceneDragAndDrop.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\AngleRangeGUI.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeEditorUtility.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\AngleRangeController.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeAssetPostProcessor.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeEditorAnalytics.cs" />
-     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\SpriteShapeHandleUtility.cs" />
-     <None Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\Handles\Shaders\Sprites-Inspector.shader" />
-     <None Include="Library\PackageCache\com.unity.2d.spriteshape@5.2.0\Editor\Unity.2D.SpriteShape.Editor.asmdef" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\AngleRangeView.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\ContextMenu.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\ObjectMenuCreation\GameObjectCreation.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\AssemblyInfo.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeEditor.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeEditorTool.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\EditorSpriteGUIUtility.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeAnalytics.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeEditorGUI.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\ObjectMenuCreation\AssetCreation.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeControllerEditor.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteSelector.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SceneDragAndDrop.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\AngleRangeGUI.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeEditorUtility.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\AngleRangeController.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeAssetPostProcessor.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeEditorAnalytics.cs" />
+     <Compile Include="Packages\com.unity.2d.spriteshape\Editor\SpriteShapeHandleUtility.cs" />
+     <None Include="Packages\com.unity.2d.spriteshape\Editor\Handles\Shaders\Sprites-Inspector.shader" />
+     <None Include="Packages\com.unity.2d.spriteshape\Editor\Unity.2D.SpriteShape.Editor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -296,12 +296,6 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions">
- <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -316,12 +310,6 @@
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Common">
- <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
