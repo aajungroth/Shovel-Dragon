@@ -1134,3 +1134,21 @@ Received Import Request.
   path: Assets/Editor/com.unity.mobile.notifications
   artifactKey: Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Editor/com.unity.mobile.notifications using Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e9b68fe1bdbdbdbadd02540846decf') in 0.007807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 163.171575 seconds.
+  path: Assets/Texts/Tutorial Texts
+  artifactKey: Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texts/Tutorial Texts using Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e92e252160dc6a7a3142469eb2824048') in 0.006816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.772005 seconds.
+  path: Assets/Texts/Tutorial Tracks
+  artifactKey: Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texts/Tutorial Tracks using Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49fbf1060f49dff2db20845864dff9c') in 0.005654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 194.726108 seconds.
+  path: Assets/Texts/Tutorial Track
+  artifactKey: Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texts/Tutorial Track using Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06569f186327affdbe2e16d503ded8f') in 0.005604 seconds 
