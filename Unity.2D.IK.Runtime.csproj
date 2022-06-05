@@ -47,20 +47,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\CCDSolver2D.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\Solver2DMenuAttribute.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\IKManager2D.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\Solver2D.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\IKManager2DEditorData.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\LimbSolver2D.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\Solvers\FABRIK2D.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\Solvers\CCD2D.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\IKChain2D.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\Solvers\Limb.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\AssemblyInfo.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\IKUtility.cs" />
-     <Compile Include="Packages\com.unity.2d.animation\IK\Runtime\FabrikSolver2D.cs" />
-     <None Include="Packages\com.unity.2d.animation\IK\Runtime\Unity.2D.IK.Runtime.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\CCDSolver2D.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\Solver2DMenuAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\IKManager2D.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\Solver2D.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\IKManager2DEditorData.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\LimbSolver2D.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\Solvers\FABRIK2D.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\Solvers\CCD2D.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\IKChain2D.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\Solvers\Limb.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\IKUtility.cs" />
+     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\FabrikSolver2D.cs" />
+     <None Include="Library\PackageCache\com.unity.2d.animation@5.1.1\IK\Runtime\Unity.2D.IK.Runtime.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -289,6 +289,12 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -300,6 +306,12 @@
  </Reference>
  <Reference Include="log4netPlastic">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
