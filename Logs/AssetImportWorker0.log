@@ -1152,3 +1152,9 @@ Received Import Request.
   path: Assets/Texts/Tutorial Track
   artifactKey: Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Texts/Tutorial Track using Guid(88a0ae1c53f294f3690e494bcc09a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06569f186327affdbe2e16d503ded8f') in 0.005604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.812072 seconds.
+  path: Assets/Texts/Tutorial Track/Level0.txt
+  artifactKey: Guid(0fb2399526d09452fa17c7b67bb5e6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texts/Tutorial Track/Level0.txt using Guid(0fb2399526d09452fa17c7b67bb5e6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fbadf9c9b782604671af13432e31df') in 4.156125 seconds 

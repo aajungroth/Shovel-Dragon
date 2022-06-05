@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Controller\LevelController.cs" />
      <Compile Include="Assets\Scripts\Model\TrackReader.cs" />
      <Compile Include="Assets\Scripts\Model\TrackModel.cs" />
+     <None Include="Assets\Texts\Tutorial Track\Level0.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
