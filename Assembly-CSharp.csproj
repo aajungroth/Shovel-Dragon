@@ -50,7 +50,7 @@
      <Compile Include="Assets\Scripts\Scene Change\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Player Controls\GridMovement.cs" />
      <Compile Include="Assets\Scripts\Controller\LevelController.cs" />
-     <Compile Include="Assets\Scripts\TrackReader.cs" />
+     <Compile Include="Assets\Scripts\Model\TrackReader.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
