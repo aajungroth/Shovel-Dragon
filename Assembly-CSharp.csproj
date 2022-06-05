@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Scene Change\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Player Controls\GridMovement.cs" />
      <Compile Include="Assets\Scripts\LevelController.cs" />
+     <Compile Include="Assets\Scripts\TrackReader.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -271,6 +272,12 @@
  </Reference>
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
