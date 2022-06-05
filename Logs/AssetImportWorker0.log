@@ -1116,3 +1116,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 745.449237 seconds.
+  path: Assets/Texts
+  artifactKey: Guid(e52ddf92445274a58a973f466fbd09d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texts using Guid(e52ddf92445274a58a973f466fbd09d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64c456a4a35f3e5b341eafddf157409') in 0.086802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.590432 seconds.
+  path: Assets/Editor
+  artifactKey: Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor using Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fef55b648584d5cae54ceb68e57337') in 0.006535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.188916 seconds.
+  path: Assets/Editor/com.unity.mobile.notifications
+  artifactKey: Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/com.unity.mobile.notifications using Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e9b68fe1bdbdbdbadd02540846decf') in 0.007807 seconds 
