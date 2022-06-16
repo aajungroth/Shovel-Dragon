@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.IK.Runtime", "Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Notifications.Android", "Unity.Notifications.Android.csproj", "{F024D75B-DF46-B252-75DB-2BBD7053C86F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.SpriteShape.Runtime", "Unity.2D.SpriteShape.Runtime.csproj", "{F0467760-2CBD-6D99-41E7-6BC260A9E501}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D5BEE28F-6F2A-DF24-0AB9-28267C7C95A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.SpriteShape.Runtime", "Unity.2D.SpriteShape.Runtime.csproj", "{F0467760-2CBD-6D99-41E7-6BC260A9E501}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Notifications.iOS", "Unity.Notifications.iOS.csproj", "{4766154E-7826-4F70-9CB2-60A45874BCE3}"
 EndProject
@@ -121,14 +121,14 @@ Global
 		{F024D75B-DF46-B252-75DB-2BBD7053C86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F024D75B-DF46-B252-75DB-2BBD7053C86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F024D75B-DF46-B252-75DB-2BBD7053C86F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5BEE28F-6F2A-DF24-0AB9-28267C7C95A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5BEE28F-6F2A-DF24-0AB9-28267C7C95A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5BEE28F-6F2A-DF24-0AB9-28267C7C95A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5BEE28F-6F2A-DF24-0AB9-28267C7C95A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0467760-2CBD-6D99-41E7-6BC260A9E501}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4766154E-7826-4F70-9CB2-60A45874BCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4766154E-7826-4F70-9CB2-60A45874BCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4766154E-7826-4F70-9CB2-60A45874BCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU

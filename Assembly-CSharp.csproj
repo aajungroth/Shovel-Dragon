@@ -47,10 +47,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Model\TrackReader.cs" />
      <Compile Include="Assets\Scripts\Scene Change\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Player Controls\GridMovement.cs" />
      <Compile Include="Assets\Scripts\Controller\LevelController.cs" />
-     <Compile Include="Assets\Scripts\Model\TrackReader.cs" />
      <Compile Include="Assets\Scripts\Model\TrackModel.cs" />
      <None Include="Assets\Texts\Tutorial Track\Level0.txt" />
  <Reference Include="UnityEngine">
