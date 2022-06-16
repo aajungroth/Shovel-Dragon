@@ -47,17 +47,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\AuthorizationRequest.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotificationAction.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotificationCenter.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\AssemblyInfo.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotification.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotificationTriggers.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotificationsWrapper.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotificationCategory.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotificationAttachment.cs" />
-     <Compile Include="Packages\com.unity.mobile.notifications\Runtime\iOS\iOSNotificationSettings.cs" />
-     <None Include="Packages\com.unity.mobile.notifications\Runtime\iOS\Unity.Notifications.iOS.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\AuthorizationRequest.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotificationAction.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotificationCenter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotification.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotificationTriggers.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotificationsWrapper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotificationCategory.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotificationAttachment.cs" />
+     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\iOSNotificationSettings.cs" />
+     <None Include="Library\PackageCache\com.unity.mobile.notifications@2.0.0\Runtime\iOS\Unity.Notifications.iOS.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -286,6 +286,12 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -297,6 +303,12 @@
  </Reference>
  <Reference Include="log4netPlastic">
  <HintPath>/Users/Shared/Unity/Shovel Dragon/Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.32f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
