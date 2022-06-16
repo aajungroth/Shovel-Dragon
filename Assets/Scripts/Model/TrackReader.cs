@@ -14,7 +14,7 @@ public class TrackReader : MonoBehaviour
         
     }
 
-    public IDictionary<string, bool> readLevel(string levelText) {
+    private IDictionary<string, bool> readLevel(string levelText) {
       IDictionary<string, bool> level = new Dictionary<string, bool>();
 
       return level;
