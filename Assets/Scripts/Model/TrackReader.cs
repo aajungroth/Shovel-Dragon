@@ -28,7 +28,38 @@ public class TrackReader : MonoBehaviour
   // Each level is represented as a dictionary with coordinates as keys and
   // booleans as values to represent squares that can be walked on
   private IDictionary<string, bool> readLevel(string levelText) {
+    // Holds the level as string cooridinate pairs keys to boolean values
     IDictionary<string, bool> level = new Dictionary<string, bool>();
+
+    // Holds dictionary keys
+    string key = "";
+
+    // Coutners
+    int i = 0;
+    int j = 0;
+
+    // Swap variable
+    int temp = 0;
+
+    // Read in the level tile by tile as characters
+    foreach(char tile in levelText) {
+      if (tile == 'O') {
+        key = i + "," + j;
+        level.add(key, true);
+        j++;
+      }
+      else if(tile == 'X') {
+        key = i + "," + j;
+        level.add(key, false);
+        j++;
+      }
+      else {
+        // New line
+        i++;
+      }
+    }
+
+    // Invert the values of the matrix vertically
 
     return level;
   }
