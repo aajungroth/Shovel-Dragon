@@ -66,7 +66,7 @@ public class TrackReader : MonoBehaviour
       }
     }
 
-    // Invert the values of the matrix vertically
+    // Invert the values of the level matrix vertically
     for (int m = i; m >= 0; m--) {
       for (int n = 0; n < jMax; n++) {
 
