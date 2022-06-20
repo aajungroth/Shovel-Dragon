@@ -38,6 +38,9 @@ public class TrackReader : MonoBehaviour
     int i = 0;
     int j = 0;
 
+    // Records the max length of a row tiles
+    int jMax = 0;
+
     // Swap variable
     int temp = 0;
 
@@ -55,14 +58,20 @@ public class TrackReader : MonoBehaviour
         level.Add(key, false);
         j++;
       }
-      else {
-        // New line indicates a new row of tiles
+      else if (System.Convert.ToInt32(tile) == 10) {
+        // Line Feed indicates a new row of tiles
         i++;
+        jMax = j;
+        j = 0;
       }
     }
 
     // Invert the values of the matrix vertically
-    
+    for (int m = i; m >= 0; m--) {
+      for (int n = 0; n < jMax; n++) {
+
+      }
+    }
 
     return level;
   }
