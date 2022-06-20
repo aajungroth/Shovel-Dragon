@@ -44,22 +44,25 @@ public class TrackReader : MonoBehaviour
     // Read in the level tile by tile as characters
     foreach(char tile in levelText) {
       if (tile == 'O') {
+        // Empty tiles can be walked on
         key = i + "," + j;
-        level.add(key, true);
+        level.Add(key, true);
         j++;
       }
       else if(tile == 'X') {
+        // Blocked tiles cannot be walked on
         key = i + "," + j;
-        level.add(key, false);
+        level.Add(key, false);
         j++;
       }
       else {
-        // New line
+        // New line indicates a new row of tiles
         i++;
       }
     }
 
     // Invert the values of the matrix vertically
+    
 
     return level;
   }
