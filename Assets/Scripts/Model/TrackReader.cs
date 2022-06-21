@@ -31,8 +31,9 @@ public class TrackReader : MonoBehaviour
     // Holds the level as string cooridinate pairs keys to boolean values
     IDictionary<string, bool> level = new Dictionary<string, bool>();
 
-    // Holds dictionary keys
+    // Hold dictionary keys
     string key = "";
+    string keyInverted = "";
 
     // Coutners
     int i = 0;
@@ -42,7 +43,7 @@ public class TrackReader : MonoBehaviour
     int jMax = 0;
 
     // Swap variable
-    int temp = 0;
+    bool temp = false;
 
     // Read in the level tile by tile as characters
     foreach(char tile in levelText) {
@@ -67,9 +68,16 @@ public class TrackReader : MonoBehaviour
     }
 
     // Invert the values of the level matrix vertically
-    for (int m = i; m >= 0; m--) {
+    for (int m = i; m >= i / 2; m--) {
       for (int n = 0; n < jMax; n++) {
+        // Assemble keys
+        key = (i - m) + "," + j;
+        keyInverted = m + "," + n;
 
+        // Swap values
+        temp = level[keyInverted];
+        level[keyInverted] = level[key];
+        level[key] = temp;
       }
     }
 
