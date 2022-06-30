@@ -9,8 +9,8 @@ public class Interactable : MonoBehaviour {
   public bool isMonster = false;
   public bool isPowerUp = false;
   
-  // Holds the interactables AI script if it is a monster
-  private MonoBehaviour monsterAI;
+  // Holds the name of the interactables AI script if it is a monster
+  private string monsterAI;
 
   // Start is called before the first frame update
   void Start() {
