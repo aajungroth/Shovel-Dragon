@@ -2,18 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrackReader : MonoBehaviour
-{
-  // Start is called before the first frame update
-  void Start() {
-      
-  }
-
-  // Update is called once per frame
-  void Update() {
-      
-  }
-
+public class TrackReader : MonoBehaviour {
   // Each track is a list of levels that can be progressed through
   public List<IDictionary<string, bool>> readTrack(List<string> trackText) {
     List<IDictionary<string, bool>> track = new List<IDictionary<string, bool>>();
