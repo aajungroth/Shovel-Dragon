@@ -25,20 +25,4 @@ public class TrackModel : MonoBehaviour {
     trackReader = gameObject.GetComponent<TrackReader>();
     track = trackReader.readTrack(trackText);
   }
-
-  // Update is called once per frame
-  void Update() {
-    
-  }
-
-  // Determines if the player's attempted move will result in the
-  // player moving to an empty space
-  public void isMoveValid(Vector2 move) {
-
-  }
-
-  // Takes the player's move and updates game state accordingly
-  public void executeTurn(Vector2 move, string ability) {
-    
-  }
 }
