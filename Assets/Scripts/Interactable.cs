@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour {
-  // Defines the interactables type
+  // Defines the interactable's type
   public bool isDoor = false;
   public bool isKey = false;
   public bool isMonster = false;
