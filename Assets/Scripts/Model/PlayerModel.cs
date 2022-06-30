@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerModel : MonoBehaviour {
-    public Vector2 initialPlayerPositions;
+    public List<Vector2> initialPlayerPositions;
 }
