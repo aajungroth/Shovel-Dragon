@@ -26,4 +26,9 @@ public class TrackModel : MonoBehaviour {
   void Update() {
     
   }
+
+  // Takes the player's move and updates game state accordingly
+  public void executeTurn(Vector2 move, string ability) {
+    
+  }
 }
