@@ -11,14 +11,4 @@ public class Interactable : MonoBehaviour {
   
   // Holds the name of the interactables AI script if it is a monster
   private string monsterAI;
-
-  // Start is called before the first frame update
-  void Start() {
-    
-  }
-
-  // Update is called once per frame
-  void Update() {
-      
-  }
 }
