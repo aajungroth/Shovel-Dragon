@@ -11,7 +11,7 @@ public class TrackModel : MonoBehaviour {
   public List<GameObject> interactableList;
 
   // The game object that has the player's initial state
-  public GameObject Player;
+  public PlayerModel playerModel;
 
   // Reads in a list of levels
   private TrackReader trackReader;
@@ -29,6 +29,6 @@ public class TrackModel : MonoBehaviour {
     track = trackReader.readTrack(trackText);
 
     // Get player starting positions
-    initialPlayerPositions = Player.GetComponent<PlayerModel>().initialPlayerPositions;
+    initialPlayerPositions = playerModel.initialPlayerPositions;
   }
 }
