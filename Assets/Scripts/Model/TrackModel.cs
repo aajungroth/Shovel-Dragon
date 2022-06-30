@@ -10,6 +10,9 @@ public class TrackModel : MonoBehaviour {
   // that are not tiles or decorations
   public List<GameObject> interactableList;
 
+  // The game object that has the player's initial state
+  public GameObject Player;
+
   // Reads in a list of levels
   private TrackReader trackReader;
 
@@ -18,6 +21,7 @@ public class TrackModel : MonoBehaviour {
 
   // Start is called before the first frame update
   void Start() {
+    // Read in the track
     trackReader = gameObject.GetComponent<TrackReader>();
     track = trackReader.readTrack(trackText);
   }
@@ -25,6 +29,12 @@ public class TrackModel : MonoBehaviour {
   // Update is called once per frame
   void Update() {
     
+  }
+
+  // Determines if the player's attempted move will result in the
+  // player moving to an empty space
+  public void isMoveValid(Vector2 move) {
+
   }
 
   // Takes the player's move and updates game state accordingly
