@@ -19,10 +19,16 @@ public class TrackModel : MonoBehaviour {
   // The list of levels as matrices that tracks empty and blocked tiles
   private List<IDictionary<string, bool>> track;
 
+  // The list of initial positions the player takes in each level
+  private List<Vector2> initialPlayerPositions;
+
   // Start is called before the first frame update
   void Start() {
     // Read in the track
     trackReader = gameObject.GetComponent<TrackReader>();
     track = trackReader.readTrack(trackText);
+
+    // Get player starting positions
+    initialPlayerPositions = Player.GetComponent<PlayerModel>().initialPlayerPositions;
   }
 }
