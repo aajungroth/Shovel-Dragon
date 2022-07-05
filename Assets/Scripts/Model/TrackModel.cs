@@ -8,7 +8,7 @@ public class TrackModel : MonoBehaviour {
 
   // List of objects in the game that the player interacts with
   // that are not tiles or decorations
-  public List<Interactable> interactableList;
+  public List<GameObject> interactableList;
 
   // The game object that has the player's initial state
   public PlayerModel playerModel;
