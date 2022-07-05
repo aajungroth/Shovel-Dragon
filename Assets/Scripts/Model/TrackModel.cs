@@ -19,6 +19,9 @@ public class TrackModel : MonoBehaviour {
   // The list of levels as matrices that tracks empty and blocked tiles
   private List<IDictionary<string, bool>> track;
 
+  // The current position of the player in a level
+  private Vector2 currentPlayerPosition;
+
   // The list of initial positions the player takes in each level
   private List<Vector2> initialPlayerPositions;
 
