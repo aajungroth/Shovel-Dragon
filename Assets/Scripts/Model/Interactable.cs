@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour {
+  // Defines how the interactable's current state in a level
+  public bool isActive = true;
+  public bool isBuried = false;
+
   // Defines the interactable's type
   public bool isDoor = false;
   public bool isKey = false;
