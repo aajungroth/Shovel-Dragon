@@ -13,12 +13,12 @@ public class Interactable : MonoBehaviour {
   public bool isMonster = false;
   public bool isPowerUp = false;
 
-  // Holds the name of the interactables AI script if it is a monster
+  // The name of the interactables AI script if it is a monster
   public string monsterAI;
 
-  // Holds the starting position of the interactable
+  // The starting position of the interactable
   public Vector2 positionStart;
 
-  // Holds the current position of the interactable
+  // The current position of the interactable
   private Vector2 positionCurrent;
 }
