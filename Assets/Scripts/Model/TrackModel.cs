@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrackModel : MonoBehaviour {
+  // The manager for interactable objects in the game
+  public InteractableManager interactableManager;
+
   // The game object that has the player's initial state
   public PlayerModel playerModel;
 
@@ -33,5 +36,8 @@ public class TrackModel : MonoBehaviour {
 
     // Get player starting positions
     initialPlayerPositions = playerModel.initialPlayerPositions;
+
+    // Get the list of interactables
+    interactableList = interactableManager.GetList();
   }
 }
