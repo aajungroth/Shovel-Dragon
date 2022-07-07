@@ -7,7 +7,7 @@ public class TrackReader : MonoBehaviour {
   public List<IDictionary<string, bool>> readTrack(List<string> trackText) {
     List<IDictionary<string, bool>> track = new List<IDictionary<string, bool>>();
 
-    foreach(string levelText in trackText) {
+    foreach (string levelText in trackText) {
       track.Add(readLevel(levelText));
     }
 
@@ -35,7 +35,7 @@ public class TrackReader : MonoBehaviour {
     bool temp = false;
 
     // Read in the level tile by tile as characters
-    foreach(char tile in levelText) {
+    foreach (char tile in levelText) {
       if (tile == 'O') {
         // Empty tiles can be walked on
         key = i + "," + j;
