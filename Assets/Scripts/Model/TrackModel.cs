@@ -22,7 +22,7 @@ public class TrackModel : MonoBehaviour {
   private Vector2 currentPlayerPosition;
 
   // The list of initial positions the player takes in each level
-  private List<Vector2> initialPlayerPositions;
+  private List<Vector2> initialPlayerPositionList;
 
   // List of objects in the game that the player interacts with
   // that are not tiles or decorations
@@ -35,7 +35,7 @@ public class TrackModel : MonoBehaviour {
     track = trackReader.readTrack(trackText);
 
     // Get the player's starting positions
-    initialPlayerPositions = playerModel.initialPlayerPositions;
+    initialPlayerPositionList = playerModel.initialPlayerPositionList;
 
     // Get the list of interactables
     interactableList = interactableManager.GetList();
