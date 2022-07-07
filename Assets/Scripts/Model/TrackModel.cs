@@ -9,15 +9,6 @@ public class TrackModel : MonoBehaviour {
   // The game object that has the player's initial state
   public PlayerModel playerModel;
 
-  // List of level text files
-  public List<string> trackText;
-
-  // Reads in a list of levels
-  private TrackReader trackReader;
-
-  // The list of levels as matrices that tracks empty and blocked tiles
-  private List<IDictionary<string, bool>> track;
-
   // The current position of the player in a level
   private Vector2 currentPlayerPosition;
 
@@ -27,6 +18,15 @@ public class TrackModel : MonoBehaviour {
   // List of objects in the game that the player interacts with
   // that are not tiles or decorations
   private List<Interactable> interactableList;
+
+  // The list of levels as matrices that tracks empty and blocked tiles
+  private List<IDictionary<string, bool>> track;
+
+  // Reads in a list of levels
+  private TrackReader trackReader;
+
+  // List of level text files
+  public List<string> trackText;
 
   // Start is called before the first frame update
   void Start() {
