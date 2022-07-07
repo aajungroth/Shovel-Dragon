@@ -6,10 +6,6 @@ public class TrackModel : MonoBehaviour {
   // List of level text files
   public List<string> trackText;
 
-  // List of objects in the game that the player interacts with
-  // that are not tiles or decorations
-  public List<Interactable> interactableList;
-
   // The game object that has the player's initial state
   public PlayerModel playerModel;
 
@@ -24,6 +20,10 @@ public class TrackModel : MonoBehaviour {
 
   // The list of initial positions the player takes in each level
   private List<Vector2> initialPlayerPositions;
+
+  // List of objects in the game that the player interacts with
+  // that are not tiles or decorations
+  private List<Interactable> interactableList;
 
   // Start is called before the first frame update
   void Start() {
