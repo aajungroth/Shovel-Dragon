@@ -45,4 +45,9 @@ public class TrackModel : MonoBehaviour {
   public List<Vector2> GetInitialPlayerPositionList() {
     return initialPlayerPositionList;
   }
+
+  // Get the track of levels
+  public List<IDictionary<string, bool>> GetTrack() {
+    return track;
+  }
 }
