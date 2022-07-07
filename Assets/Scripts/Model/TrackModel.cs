@@ -34,7 +34,7 @@ public class TrackModel : MonoBehaviour {
     trackReader = gameObject.GetComponent<TrackReader>();
     track = trackReader.readTrack(trackText);
 
-    // Get player starting positions
+    // Get the player's starting positions
     initialPlayerPositions = playerModel.initialPlayerPositions;
 
     // Get the list of interactables
