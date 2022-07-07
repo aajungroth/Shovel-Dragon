@@ -41,6 +41,11 @@ public class TrackModel : MonoBehaviour {
     interactableList = interactableManager.GetList();
   }
 
+  // Get the current player position
+  public Vector2 GetCurrentPlayerPosition() {
+    return currentPlayerPosition;
+  }
+
   // Get the list of initial player positions
   public List<Vector2> GetInitialPlayerPositionList() {
     return initialPlayerPositionList;
