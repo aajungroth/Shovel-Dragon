@@ -51,6 +51,11 @@ public class TrackModel : MonoBehaviour {
     return initialPlayerPositionList;
   }
 
+  // Get the list of interactables
+  public List<Interactable> GetInteractableList() {
+    return interactableList;
+  }
+
   // Get the track of levels
   public List<IDictionary<string, bool>> GetTrack() {
     return track;
