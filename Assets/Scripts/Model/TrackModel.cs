@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrackModel : MonoBehaviour {
-  // List of level text files
-  public List<string> trackText;
-
   // The game object that has the player's initial state
   public PlayerModel playerModel;
+
+  // List of level text files
+  public List<string> trackText;
 
   // Reads in a list of levels
   private TrackReader trackReader;
