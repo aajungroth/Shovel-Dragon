@@ -60,4 +60,28 @@ public class TrackModel : MonoBehaviour {
   public List<IDictionary<string, bool>> GetTrack() {
     return track;
   }
+
+  // Updates the player's position in the model to one tile down
+  public Vector2 MovePlayerDown() {
+    currentPlayerPosition += Vector2.Down;
+    return currentPlayerPosition;
+  }
+
+  // Updates the player's position in the model to one tile left
+  public Vector2 MovePlayerLeft() {
+    currentPlayerPosition += Vector2.Left;
+    return currentPlayerPosition;
+  }
+
+  // Updates the player's position in the model to one tile right
+  public Vector2 MovePlayerRight() {
+    currentPlayerPosition += Vector2.Right;
+    return currentPlayerPosition;
+  }
+
+  // Updates the player's position in the model to one tile up
+  public Vector2 MovePlayerUp() {
+    currentPlayerPosition += Vector2.Up;
+    return currentPlayerPosition;
+  }
 }
