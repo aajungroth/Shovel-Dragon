@@ -63,25 +63,25 @@ public class TrackModel : MonoBehaviour {
 
   // Updates the player's position in the model to one tile down
   public Vector2 MovePlayerDown() {
-    currentPlayerPosition += Vector2.Down;
+    currentPlayerPosition += Vector2.down;
     return currentPlayerPosition;
   }
 
   // Updates the player's position in the model to one tile left
   public Vector2 MovePlayerLeft() {
-    currentPlayerPosition += Vector2.Left;
+    currentPlayerPosition += Vector2.left;
     return currentPlayerPosition;
   }
 
   // Updates the player's position in the model to one tile right
   public Vector2 MovePlayerRight() {
-    currentPlayerPosition += Vector2.Right;
+    currentPlayerPosition += Vector2.right;
     return currentPlayerPosition;
   }
 
   // Updates the player's position in the model to one tile up
   public Vector2 MovePlayerUp() {
-    currentPlayerPosition += Vector2.Up;
+    currentPlayerPosition += Vector2.up;
     return currentPlayerPosition;
   }
 }
