@@ -84,4 +84,10 @@ public class TrackModel : MonoBehaviour {
     currentPlayerPosition += Vector2.up;
     return currentPlayerPosition;
   }
+
+  // Updates the player's position in the model to requested tile
+  public Vector2 SetCurrentPlayerPosition(Vector2 nextPlayerPosition) {
+    currentPlayerPosition = nextPlayerPosition;
+    return currentPlayerPosition;    
+  }
 }
