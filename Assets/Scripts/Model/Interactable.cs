@@ -27,26 +27,26 @@ public class Interactable : MonoBehaviour {
 
   // Moves the interactable down one tile
   public void moveDown() {
-    return StartCoroutine(move(Vector3.down));
+    StartCoroutine(move(Vector3.down));
   }
 
   // Moves the interactable left one tile
   public void moveLeft() {
-    return StartCoroutine(move(Vector3.left));
+    StartCoroutine(move(Vector3.left));
   }
 
   // Moves the interactable right one tile
   public void moveRight() {
-    return StartCoroutine(move(Vector3.right));
+    StartCoroutine(move(Vector3.right));
   }
 
   // Moves the interactable up one tile
   public void moveUp() {
-    return StartCoroutine(move(Vector3.up));
+    StartCoroutine(move(Vector3.up));
   }
 
   // Moves the interactable in a given direction
-  private IEnumerator move(direction) {
+  private IEnumerator move(Vector3 direction) {
     Vector3 positionOriginal = transform.position;
     Vector3 positionTarget = positionOriginal + direction;
     float timeElapsed = 0;
