@@ -11,8 +11,6 @@ public class GridMovement : MonoBehaviour {
   public float timeToMove = 0.2f;
 
   private bool isMoving = false;
-  private Vector3 positionOriginal = Vector3.zero;
-  private Vector3 positionTarget = Vector3.zero;
 
   // Start is called before the first frame update
   void Start() {
@@ -54,10 +52,9 @@ public class GridMovement : MonoBehaviour {
   private IEnumerator MovePlayer(Vector3 direction) {
     isMoving = true;
 
+    Vector3 positionOriginal = transform.position;
+    Vector3 positionTarget = positionOriginal + direction;
     float timeElapsed = 0;
-
-    positionOriginal = transform.position;
-    positionTarget = positionOriginal + direction;
 
     while (timeElapsed < timeToMove) {
       transform.position = Vector3.Lerp(positionOriginal, positionTarget, timeElapsed / timeToMove);
