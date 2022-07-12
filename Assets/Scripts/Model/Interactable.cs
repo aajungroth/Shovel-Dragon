@@ -19,6 +19,9 @@ public class Interactable : MonoBehaviour {
   // The starting position of the interactable
   public Vector2 positionStart;
 
+  // The time it takes for movement to be completed
+  public float timeToMove = 0.2f;
+
   // The current position of the interactable
   private Vector2 positionCurrent;
 
@@ -43,5 +46,7 @@ public class Interactable : MonoBehaviour {
   }
 
   // Moves the interactable in a given direction
-  private IEnumerator move(direction) {}
+  private IEnumerator move(direction) {
+
+  }
 }
