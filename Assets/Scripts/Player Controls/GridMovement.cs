@@ -20,11 +20,6 @@ public class GridMovement : MonoBehaviour {
     buttonLeft.onClick.AddListener(validateMoveLeft);
   }
 
-  // Update is called once per frame
-  void Update() {
-    
-  }
-
   private void validateMoveUp() {
     if (!isMoving) {
       StartCoroutine(MovePlayer(Vector3.up));
