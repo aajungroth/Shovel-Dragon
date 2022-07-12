@@ -21,4 +21,27 @@ public class Interactable : MonoBehaviour {
 
   // The current position of the interactable
   private Vector2 positionCurrent;
+
+  // Moves the interactable down one tile
+  public void moveDown() {
+    return StartCoroutine(move(Vector3.down));
+  }
+
+  // Moves the interactable left one tile
+  public void moveLeft() {
+    return StartCoroutine(move(Vector3.left));
+  }
+
+  // Moves the interactable right one tile
+  public void moveRight() {
+    return StartCoroutine(move(Vector3.right));
+  }
+
+  // Moves the interactable up one tile
+  public void moveUp() {
+    return StartCoroutine(move(Vector3.up));
+  }
+
+  // Moves the interactable in a given direction
+  private IEnumerator move(direction) {}
 }
