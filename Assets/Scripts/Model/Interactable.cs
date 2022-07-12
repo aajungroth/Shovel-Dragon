@@ -25,6 +25,11 @@ public class Interactable : MonoBehaviour {
   // The current position of the interactable
   private Vector2 positionCurrent;
 
+  // Gets the interactables current position
+  public Vector2 GetPositionCurrent() {
+    return positionCurrent;
+  }
+
   // Moves the interactable down one tile
   public void moveDown() {
     StartCoroutine(move(Vector3.down));
@@ -58,5 +63,17 @@ public class Interactable : MonoBehaviour {
     }
 
     transform.position = positionTarget;
+  }
+
+  // Updates the interactable's current position to the requested posiiton
+  public Vector2 SetPositionCurrent(Vector2 positionNext) {
+    positionCurrent = positionNext;
+    return positionNext;
+  }
+
+  // Updates the interactable's transform positon ot the requested position
+  public Vector3 SetTransformPosition(Vector3 positionNext) {
+    transform.position = positionNext;
+    return transform.position;
   }
 }
