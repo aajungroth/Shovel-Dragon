@@ -47,6 +47,16 @@ public class Interactable : MonoBehaviour {
 
   // Moves the interactable in a given direction
   private IEnumerator move(direction) {
+    Vector3 positionOriginal = transform.position;
+    Vector3 positionTarget = positionOriginal + direction;
+    float timeElapsed = 0;
 
+    while (timeElapsed < timeToMove) {
+      transform.position = Vector3.Lerp(positionOriginal, positionTarget, timeElapsed / timeToMove);
+      timeElapsed += Time.deltaTime;
+      yield return null;
+    }
+
+    transform.position = positionTarget;
   }
 }
