@@ -16,7 +16,7 @@ public class InteractableModel : MonoBehaviour {
   public bool isMonster = false;
   public bool isPowerUp = false;
 
-  // The name of the interactables AI script if it is a monster
+  // The name of the interactable's AI script if it is a monster
   public string monsterAI;
 
   // The starting position of the interactable
@@ -31,7 +31,7 @@ public class InteractableModel : MonoBehaviour {
   // The current position of the interactable
   private Vector2 currentPosition;
 
-  // Gets the interactables current position
+  // Gets the interactable's current position
   public Vector2 GetCurrentPosition() {
     return currentPosition;
   }
