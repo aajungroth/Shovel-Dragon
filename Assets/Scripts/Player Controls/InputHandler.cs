@@ -21,6 +21,7 @@ public class InputHandler : MonoBehaviour {
     buttonUp.onClick.AddListener(requestMoveUp);
   }
 
+  // Asks the level controller to move the player down
   private void requestMoveDown() {
     if (isInputEnabled) {
       isInputEnabled = false;
@@ -28,6 +29,7 @@ public class InputHandler : MonoBehaviour {
     }
   }
 
+  // Asks the level controller to move the player left
   private void requestMoveLeft() {
    if (isInputEnabled) {
       isInputEnabled = false;
@@ -35,6 +37,7 @@ public class InputHandler : MonoBehaviour {
     } 
   }
 
+  // Asks the level controller to move the player right
   private void requestMoveRight() {
     if (isInputEnabled) {
       isInputEnabled = false;
@@ -42,6 +45,7 @@ public class InputHandler : MonoBehaviour {
     }
   }
 
+  // Asks the level controller to move the player up
   private void requestMoveUp() {
     if (isInputEnabled) {
       isInputEnabled = false;
