@@ -4,22 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GridMovement : MonoBehaviour {
-  public Button buttonUp;
-  public Button buttonRight;
-  public Button buttonDown;
-  public Button buttonLeft;
-  public float timeToMove = 0.2f;
-
-  private bool isMoving = false;
-
-  // Start is called before the first frame update
-  void Start() {
-    buttonUp.onClick.AddListener(validateMoveUp);
-    buttonRight.onClick.AddListener(validateMoveRight);
-    buttonDown.onClick.AddListener(validateMoveDown);
-    buttonLeft.onClick.AddListener(validateMoveLeft);
-  }
-
   private void validateMoveUp() {
     if (!isMoving) {
       StartCoroutine(MovePlayer(Vector3.up));
@@ -45,8 +29,6 @@ public class GridMovement : MonoBehaviour {
   }
 
   private IEnumerator MovePlayer(Vector3 direction) {
-    isMoving = true;
-
     Vector3 positionOriginal = transform.position;
     Vector3 positionTarget = positionOriginal + direction;
     float timeElapsed = 0;
@@ -59,6 +41,6 @@ public class GridMovement : MonoBehaviour {
 
     transform.position = positionTarget;
 
-    isMoving = false;
+    // add reference to function in level controller
   }
 }
