@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class InputHandler : MonoBehaviour {
   // The buttons used to control movement
-  public Button buttonUp;
-  public Button buttonRight;
   public Button buttonDown;
   public Button buttonLeft;
+  public Button buttonRight;
+  public Button buttonUp;
 
   // Only one button input will be processed at a time
   public bool isInputEnabled = true;
