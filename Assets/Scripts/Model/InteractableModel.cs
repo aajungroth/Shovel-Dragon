@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractableModel : MonoBehaviour {
+  // The level interactabl starts in
+  public int initialLevel = 0;
+
   // Defines how the interactable's current state in a level
   public bool isActive = true;
   public bool isBuried = false;
@@ -21,6 +24,9 @@ public class InteractableModel : MonoBehaviour {
 
   // The time it takes for movement to be completed
   public float timeToMove = 0.2f;
+
+  // The level the interactable is currently in
+  private int currentLevel;
 
   // The current position of the interactable
   private Vector2 positionCurrent;
