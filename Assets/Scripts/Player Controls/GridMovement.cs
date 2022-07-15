@@ -26,20 +26,20 @@ public class GridMovement : MonoBehaviour {
 
   // Moves a GameObject in the requested time and diretion and signals when the movement is complete
   private IEnumerator MoveGameObject(Action done, GameObject targetGameObject, float timeToMove, Vector3 direction) {
-    Vector3 positionOriginal = targetGameObject.transform.position;
-    Vector3 positionTarget = positionOriginal + direction;
+    Vector3 originalPosition = targetGameObject.transform.position;
+    Vector3 targetPosition = originalPosition + direction;
     float timeElapsed = 0;
 
     // This performs the movement across multiple frames
     while (timeElapsed < timeToMove) {
       targetGameObject.transform.position = Vector3
-        .Lerp(positionOriginal, positionTarget, timeElapsed / timeToMove);
+        .Lerp(originalPosition, targetPosition, timeElapsed / timeToMove);
       timeElapsed += Time.deltaTime;
       yield return null;
     }
 
     // Ensures the Game Object reaches the target position exactly
-    targetGameObject.transform.position = positionTarget;
+    targetGameObject.transform.position = targetPosition;
 
     // Signals to the original caller that the coroutine is finished
     done();
