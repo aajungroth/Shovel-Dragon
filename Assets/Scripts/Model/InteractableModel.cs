@@ -31,6 +31,11 @@ public class InteractableModel : MonoBehaviour {
   // The current position of the interactable
   private Vector2 currentPosition;
 
+  // Gets the interactable's current level
+  public int GetCurrentLevel() {
+    return currentLevel;
+  }
+
   // Gets the interactable's current position
   public Vector2 GetCurrentPosition() {
     return currentPosition;
@@ -58,6 +63,12 @@ public class InteractableModel : MonoBehaviour {
   public Vector2 MoveCurrentPositionUp() {
     currentPosition += Vector2.up;
     return currentPosition;
+  }
+
+  // Updates the interactable's level
+  public int SetCurrentLevel(int nextLevel) {
+    currentLevel = nextLevel;
+    return currentLevel;
   }
 
   // Updates the interactable's position in the model to a specific tile
