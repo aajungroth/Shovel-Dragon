@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour {
+public class InteractableModel : MonoBehaviour {
   // Defines how the interactable's current state in a level
   public bool isActive = true;
   public bool isBuried = false;
