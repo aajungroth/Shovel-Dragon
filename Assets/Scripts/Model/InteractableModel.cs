@@ -54,7 +54,7 @@ public class InteractableModel : MonoBehaviour {
     return positionCurrent;
   }
 
-  // Updates the interactable's current position to the requested posiiton
+  // Updates the interactable's position in the model to a specific tile
   public Vector2 SetPositionCurrent(Vector2 positionNext) {
     positionCurrent = positionNext;
     return positionNext;
