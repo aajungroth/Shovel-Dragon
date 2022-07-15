@@ -15,24 +15,10 @@ public class InputHandler : MonoBehaviour {
 
   // Start is called before the first frame update
   void Start() {
-    buttonUp.onClick.AddListener(validateMoveUp);
-    buttonRight.onClick.AddListener(validateMoveRight);
-    buttonDown.onClick.AddListener(validateMoveDown);
-    buttonLeft.onClick.AddListener(validateMoveLeft);
-  }
-
-  private void requestMoveUp() {
-    if (isInputEnabled) {
-      isInputEnabled = false;
-      // level controller function
-    }
-  }
-
-  private void requestMoveRight() {
-    if (isInputEnabled) {
-      isInputEnabled = false;
-      // level controller function
-    }
+    buttonDown.onClick.AddListener(requestMoveDown);
+    buttonLeft.onClick.AddListener(requestMoveLeft);
+    buttonRight.onClick.AddListener(requestMoveRight);
+    buttonUp.onClick.AddListener(requestMoveUp);
   }
 
   private void requestMoveDown() {
@@ -47,5 +33,19 @@ public class InputHandler : MonoBehaviour {
       isInputEnabled = false;
       // level controller function
     } 
+  }
+
+  private void requestMoveRight() {
+    if (isInputEnabled) {
+      isInputEnabled = false;
+      // level controller function
+    }
+  }
+
+  private void requestMoveUp() {
+    if (isInputEnabled) {
+      isInputEnabled = false;
+      // level controller function
+    }
   }
 }
