@@ -30,6 +30,7 @@ public class GridMovement : MonoBehaviour {
     Vector3 positionTarget = positionOriginal + direction;
     float timeElapsed = 0;
 
+    // This performs the movement across multiple frames
     while (timeElapsed < timeToMove) {
       targetGameObject.transform.position = Vector3
         .Lerp(positionOriginal, positionTarget, timeElapsed / timeToMove);
@@ -37,8 +38,10 @@ public class GridMovement : MonoBehaviour {
       yield return null;
     }
 
+    // Ensures the Game Object reaches the target position exactly
     transform.position = positionTarget;
 
+    // Signals to the original caller that the coroutine is finished
     done();
   }
 }
