@@ -22,7 +22,7 @@ public class InputHandler : MonoBehaviour {
   }
 
   // Asks the level controller to move the player down
-  private void requestMoveDown() {
+  private void RequestMoveDown() {
     if (isInputEnabled) {
       isInputEnabled = false;
       // level controller function
@@ -30,7 +30,7 @@ public class InputHandler : MonoBehaviour {
   }
 
   // Asks the level controller to move the player left
-  private void requestMoveLeft() {
+  private void RequestMoveLeft() {
    if (isInputEnabled) {
       isInputEnabled = false;
       // level controller function
@@ -38,7 +38,7 @@ public class InputHandler : MonoBehaviour {
   }
 
   // Asks the level controller to move the player right
-  private void requestMoveRight() {
+  private void RequestMoveRight() {
     if (isInputEnabled) {
       isInputEnabled = false;
       // level controller function
@@ -46,7 +46,7 @@ public class InputHandler : MonoBehaviour {
   }
 
   // Asks the level controller to move the player up
-  private void requestMoveUp() {
+  private void RequestMoveUp() {
     if (isInputEnabled) {
       isInputEnabled = false;
       // level controller function
