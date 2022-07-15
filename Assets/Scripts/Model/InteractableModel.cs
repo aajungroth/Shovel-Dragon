@@ -20,7 +20,7 @@ public class InteractableModel : MonoBehaviour {
   public string monsterAI;
 
   // The starting position of the interactable
-  public Vector2 positionStart;
+  public Vector2 startPosition;
 
   // The time it takes for movement to be completed
   public float timeToMove = 0.2f;
@@ -29,40 +29,40 @@ public class InteractableModel : MonoBehaviour {
   private int currentLevel;
 
   // The current position of the interactable
-  private Vector2 positionCurrent;
+  private Vector2 currentPosition;
 
   // Gets the interactables current position
-  public Vector2 GetPositionCurrent() {
-    return positionCurrent;
+  public Vector2 GetCurrentPosition() {
+    return currentPosition;
   }
 
   // Updates the interactable's position in the model down one tile
-  public Vector2 MovePositionCurrentDown() {
-    positionCurrent += Vector2.down;
-    return positionCurrent;
+  public Vector2 MoveCurrentPositionDown() {
+    currentPosition += Vector2.down;
+    return currentPosition;
   }
 
   // Updates the interactable's position in the model left one tile
-  public Vector2 MovePositionCurrentLeft() {
-    positionCurrent += Vector2.left;
-    return positionCurrent;
+  public Vector2 MoveCurrentPositionLeft() {
+    currentPosition += Vector2.left;
+    return currentPosition;
   }
 
   // Updates the interactable's position in the model right one tile
-  public Vector2 MovePositionCurrentRight() {
-    positionCurrent += Vector2.right;
-    return positionCurrent;
+  public Vector2 MoveCurrentPositionRight() {
+    currentPosition += Vector2.right;
+    return currentPosition;
   }
 
   // Updates the interactable's position in the model up one tile
-  public Vector2 MovePositionCurrentUp() {
-    positionCurrent += Vector2.up;
-    return positionCurrent;
+  public Vector2 MoveCurrentPositionUp() {
+    currentPosition += Vector2.up;
+    return currentPosition;
   }
 
   // Updates the interactable's position in the model to a specific tile
-  public Vector2 SetPositionCurrent(Vector2 positionNext) {
-    positionCurrent = positionNext;
-    return positionNext;
+  public Vector2 SetCurrentPosition(Vector2 positionNext) {
+    currentPosition = positionNext;
+    return currentPosition;
   }
 }
