@@ -59,45 +59,4 @@ public class InteractableModel : MonoBehaviour {
     positionCurrent = positionNext;
     return positionNext;
   }
-
-  // Updates the interactable's transform positon ot the requested position
-  public Vector3 SetTransformPosition(Vector3 positionNext) {
-    transform.position = positionNext;
-    return transform.position;
-  }
-
-  // Moves the interactable down one tile
-  public void moveDown() {
-    StartCoroutine(move(Vector3.down));
-  }
-
-  // Moves the interactable left one tile
-  public void moveLeft() {
-    StartCoroutine(move(Vector3.left));
-  }
-
-  // Moves the interactable right one tile
-  public void moveRight() {
-    StartCoroutine(move(Vector3.right));
-  }
-
-  // Moves the interactable up one tile
-  public void moveUp() {
-    StartCoroutine(move(Vector3.up));
-  }
-
-  // Moves the interactable in a given direction
-  private IEnumerator move(Vector3 direction) {
-    Vector3 positionOriginal = transform.position;
-    Vector3 positionTarget = positionOriginal + direction;
-    float timeElapsed = 0;
-
-    while (timeElapsed < timeToMove) {
-      transform.position = Vector3.Lerp(positionOriginal, positionTarget, timeElapsed / timeToMove);
-      timeElapsed += Time.deltaTime;
-      yield return null;
-    }
-
-    transform.position = positionTarget;
-  }
 }
