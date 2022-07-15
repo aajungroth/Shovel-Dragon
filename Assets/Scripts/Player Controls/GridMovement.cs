@@ -4,20 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GridMovement : MonoBehaviour {
-  public void MoveGameObjectUp() {
-    StartCoroutine(MoveGameObject(Vector3.up));
+  public void MoveGameObjectUp(Action done, GameObject targetGameObject) {
+    StartCoroutine(MoveGameObject(done, targetGameObject, Vector3.up));
   }
 
-  public void MoveGameObjectRight() {
-    StartCoroutine(MoveGameObject(Vector3.right));
+  public void MoveGameObjectRight(Action done, GameObject targetGameObject) {
+    StartCoroutine(MoveGameObject(done, targetGameObject, Vector3.right));
   }
 
-  public void MoveGameObjectDown() {
-    StartCoroutine(MoveGameObject(Vector3.down));
+  public void MoveGameObjectDown(Action done, GameObject targetGameObject) {
+    StartCoroutine(MoveGameObject(done, targetGameObject, Vector3.down));
   }
 
-  public void MoveGameObjectLeft() {
-    StartCoroutine(MoveGameObject(Vector3.left));
+  public void MoveGameObjectLeft(Action done, GameObject targetGameObject) {
+    StartCoroutine(MoveGameObject(done, targetGameObject, Vector3.left));
   }
 
   private IEnumerator MoveGameObject(Action done, GameObject targetGameObject, Vector3 direction) {
