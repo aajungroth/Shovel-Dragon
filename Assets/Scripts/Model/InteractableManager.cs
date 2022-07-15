@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractableManager : MonoBehaviour {
-  // Gets the list of the interactables 
+  // Gets the list of GameObjects that are interactables 
   public List<Interactable> GetList() {
     List<Interactable> interactableList = new List<Interactable>();
     Interactable[] interactableComponentList = GetComponentsInChildren<Interactable>(); 
