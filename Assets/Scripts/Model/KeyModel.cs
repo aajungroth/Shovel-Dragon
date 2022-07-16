@@ -7,5 +7,5 @@ public class KeyModel : EntityModel {
   public Vector2 initialPosition;
 
   // Tests if the key has been buried
-  public bool isBuried = false;
+  public bool isBuried = true;
 }
