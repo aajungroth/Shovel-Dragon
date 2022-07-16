@@ -5,22 +5,16 @@ using UnityEngine;
 public class PlayerModel : MonoBehaviour {
   public string intialPlayerDirection = "right";
   public int initialPlayerLevel = 0;
+
+  // The list of initial positions the player takes in each level
   public List<Vector2> initialPlayerPositionList;
 
   // The current position of the player in a level
   private Vector2 currentPlayerPosition;
 
-  // The list of initial positions the player takes in each level
-  private List<Vector2> initialPlayerPositionList;
-
   // Get the current player position
   public Vector2 GetCurrentPlayerPosition() {
     return currentPlayerPosition;
-  }
-
-  // Get the list of initial player positions
-  public List<Vector2> GetInitialPlayerPositionList() {
-    return initialPlayerPositionList;
   }
 
   // Updates the player's position in the model to one tile down
