@@ -4,49 +4,49 @@ using UnityEngine;
 
 public class PlayerModel : MonoBehaviour {
   // The direction the player is facing when the game starts
-  public string intialPlayerDirection = "right";
+  public string intialDirection = "right";
 
   // The level the player will start in
-  public int initialPlayerLevel = 0;
+  public int initialLevel = 0;
 
   // The list of initial positions the player takes in each level
-  public List<Vector2> initialPlayerPositionList;
+  public List<Vector2> initialPositionList;
 
   // The current position of the player in a level
-  private Vector2 currentPlayerPosition;
+  private Vector2 currentPosition;
 
   // Get the current player position
-  public Vector2 GetCurrentPlayerPosition() {
-    return currentPlayerPosition;
+  public Vector2 GetCurrentPosition() {
+    return currentPosition;
   }
 
   // Updates the player's position in the model to one tile down
-  public Vector2 MovePlayerDown() {
-    currentPlayerPosition += Vector2.down;
-    return currentPlayerPosition;
+  public Vector2 MoverDown() {
+    currentPosition += Vector2.down;
+    return currentPosition;
   }
 
   // Updates the player's position in the model to one tile left
-  public Vector2 MovePlayerLeft() {
-    currentPlayerPosition += Vector2.left;
-    return currentPlayerPosition;
+  public Vector2 MoveLeft() {
+    currentPosition += Vector2.left;
+    return currentPosition;
   }
 
   // Updates the player's position in the model to one tile right
-  public Vector2 MovePlayerRight() {
-    currentPlayerPosition += Vector2.right;
-    return currentPlayerPosition;
+  public Vector2 MoveRight() {
+    currentPosition += Vector2.right;
+    return currentPosition;
   }
 
   // Updates the player's position in the model to one tile up
-  public Vector2 MovePlayerUp() {
-    currentPlayerPosition += Vector2.up;
-    return currentPlayerPosition;
+  public Vector2 MoveUp() {
+    currentPosition += Vector2.up;
+    return currentPosition;
   }
 
   // Updates the player's position in the model to requested tile
-  public Vector2 SetCurrentPlayerPosition(Vector2 nextPlayerPosition) {
-    currentPlayerPosition = nextPlayerPosition;
-    return currentPlayerPosition;    
+  public Vector2 SetCurrentPosition(Vector2 nextPosition) {
+    currentPosition = nextPosition;
+    return currentPosition;    
   }
 }
