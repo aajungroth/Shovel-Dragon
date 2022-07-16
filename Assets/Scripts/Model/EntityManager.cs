@@ -8,7 +8,7 @@ public class EntityManager : MonoBehaviour {
 
   // Awake is called before any other Start method
   void Awake() {
-
+    entityList = GetChildren();
   }
 
   // Gets the list of GameObjects that are entities 
