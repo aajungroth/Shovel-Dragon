@@ -6,9 +6,9 @@ public class InteractableManager : MonoBehaviour {
   // Gets the list of GameObjects that are interactables 
   public List<GameObject> GetList() {
     List<GameObject> interactableList = new List<GameObject>();
-    transform[] transformList = GetComponentsInChildren<transform>(); 
+    Transform[] transformList = GetComponentsInChildren<Transform>(); 
     
-    foreach (transform childTransform in transformList) {
+    foreach (Transform childTransform in transformList) {
       GameObject childGameObject = childTransform.gameObject;
 
       // Tests if the GameObject is an interactable
