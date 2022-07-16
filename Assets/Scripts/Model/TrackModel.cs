@@ -12,8 +12,8 @@ public class TrackModel : MonoBehaviour {
   // Reads in a list of levels
   private TrackReader trackReader;
 
-  // Start is called before the first frame update
-  void Start() {
+  // Awake is called before any other Start method
+  void Awake() {
     // Get the track reader
     trackReader = gameObject.GetComponent<TrackReader>();
 
