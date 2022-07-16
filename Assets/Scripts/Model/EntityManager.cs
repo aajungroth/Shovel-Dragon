@@ -43,6 +43,21 @@ public class EntityManager : MonoBehaviour {
     return hole;
   }
 
+  // Deletes an entity by index if it is a hole
+  public void DeleteHole(int entityIndex) {
+    // Gets a entity by index from the entity list
+    GameObject entity = entityList[entityIndex];
+
+    // Tests if the entity is a hole GameObject
+    if (entity.GetComponent<HoleModel> != null) {
+      // Removes the hole GameObject from the entity list
+      entityList.RemoveAt(entityIndex);
+
+      // Deletes the hole GameObject
+      entity.fillHole();
+    }
+  }
+
   // Gets the list of entities
   public List<GameObject> GetList() {
     return entityList;
