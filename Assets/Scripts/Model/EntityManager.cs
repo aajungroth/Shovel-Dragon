@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EntityManager : MonoBehaviour {
+  // The hole prefab used to instantiate new hole GameObjects
+  public GameObject holePrefab;
+
   // A list of all GameObjects that are entities in the game
   private List<GameObject> entityList;
 
@@ -13,6 +16,31 @@ public class EntityManager : MonoBehaviour {
   void Awake() {
     entityList = GetChildren();
     player = FindPlayer(entityList);
+  }
+
+  // Creates a new hole GameObject entity under the EntityManager object's
+  // GameObject and then adds it to the list
+  public GameObject AddHole(Vector3 targetPosition, int initialLevel, 
+  Vector2 initialPosition, char size) {
+    // Creates a new hole GameObject at a requested position
+    GameObject hole = Instantiate(holePrefab, targetPosition,
+      Quaternion.identity);
+    
+    // Gets the hole model from the hole GameObject
+    HoleModel holeModel = hole.GetComponent<HoleModel>();
+
+    // Sets the hole's model data
+    holeModel.initialLevel = initialLevel;
+    holeModel.initialPosition = initialPosition;
+    holeModel.size = size;
+
+    // Places the hole GameObject under the EntityManager GameObject
+    hole.transform.parent = gameObject.transform;
+
+    // Adds the hole GameObject to the list of entities
+    entityList.Add(hole);
+
+    return hole;
   }
 
   // Gets the list of entities
