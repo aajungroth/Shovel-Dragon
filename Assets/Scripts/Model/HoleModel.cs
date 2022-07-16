@@ -9,8 +9,8 @@ public class HoleModel : EntityModel {
   // The size of the hole which can be small (S), medium (M), or large (L)
   public char size;
 
-  // Destroys the hole's GameObjects
-  public fillHole() {
+  // Destroys the hole's GameObject
+  public void fillHole() {
     Destroy(gameObject);
   }
 }
