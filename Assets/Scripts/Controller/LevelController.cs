@@ -8,11 +8,6 @@ public class LevelController : MonoBehaviour {
     
   }
 
-  // Update is called once per frame
-  void Update() {
-    
-  }
-
   // Determines if the player's attempted move will result in the
   // player moving to an empty space
   public void isMoveValid(Vector2 move) {
