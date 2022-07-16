@@ -6,9 +6,6 @@ public class EntityModel : MonoBehaviour {
   // The level entity starts in
   public int initialLevel = 0;
 
-  // The starting position of the entity
-  public Vector2 initialPosition;
-
   // The time it takes for movement to be completed
   public float timeToMove = 0.2f;
 
