@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrackModel : MonoBehaviour {
-  // The game object that has the player's initial state
-  public PlayerModel playerModel;
-
-  // The current position of the player in a level
-  private Vector2 currentPlayerPosition;
-
-  // The list of initial positions the player takes in each level
-  private List<Vector2> initialPlayerPositionList;
-
   // The list of levels as matrices that tracks empty and blocked tiles
   private List<IDictionary<string, bool>> track;
 
@@ -26,53 +17,10 @@ public class TrackModel : MonoBehaviour {
     // Read in the track
     trackReader = gameObject.GetComponent<TrackReader>();
     track = trackReader.readTrack(trackText);
-
-    // Get the player's starting positions
-    initialPlayerPositionList = playerModel.initialPlayerPositionList;
-  }
-
-  // Get the current player position
-  public Vector2 GetCurrentPlayerPosition() {
-    return currentPlayerPosition;
-  }
-
-  // Get the list of initial player positions
-  public List<Vector2> GetInitialPlayerPositionList() {
-    return initialPlayerPositionList;
   }
 
   // Get the track of levels
   public List<IDictionary<string, bool>> GetTrack() {
     return track;
-  }
-
-  // Updates the player's position in the model to one tile down
-  public Vector2 MovePlayerDown() {
-    currentPlayerPosition += Vector2.down;
-    return currentPlayerPosition;
-  }
-
-  // Updates the player's position in the model to one tile left
-  public Vector2 MovePlayerLeft() {
-    currentPlayerPosition += Vector2.left;
-    return currentPlayerPosition;
-  }
-
-  // Updates the player's position in the model to one tile right
-  public Vector2 MovePlayerRight() {
-    currentPlayerPosition += Vector2.right;
-    return currentPlayerPosition;
-  }
-
-  // Updates the player's position in the model to one tile up
-  public Vector2 MovePlayerUp() {
-    currentPlayerPosition += Vector2.up;
-    return currentPlayerPosition;
-  }
-
-  // Updates the player's position in the model to requested tile
-  public Vector2 SetCurrentPlayerPosition(Vector2 nextPlayerPosition) {
-    currentPlayerPosition = nextPlayerPosition;
-    return currentPlayerPosition;    
   }
 }
