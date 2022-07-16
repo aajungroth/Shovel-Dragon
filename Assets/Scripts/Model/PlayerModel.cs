@@ -12,8 +12,16 @@ public class PlayerModel : MonoBehaviour {
   // The list of initial positions the player takes in each level
   public List<Vector2> initialPositionList;
 
+  // The current level the player is in
+  private int currentLevel;
+
   // The current position of the player in a level
   private Vector2 currentPosition;
+
+  // Gets the level the player is currently in
+  public int GetCurrentLevel() {
+    return currentLevel;
+  }
 
   // Get the current player position
   public Vector2 GetCurrentPosition() {
@@ -42,6 +50,12 @@ public class PlayerModel : MonoBehaviour {
   public Vector2 MoveUp() {
     currentPosition += Vector2.up;
     return currentPosition;
+  }
+
+  // Updates the level the player is in
+  public int SetCurrentLevel(int nextLevel) {
+    currentLevel = nextLevel;
+    return currentLevel;
   }
 
   // Updates the player's position in the model to requested tile
