@@ -15,10 +15,10 @@ public class InputHandler : MonoBehaviour {
 
   // Start is called before the first frame update
   void Start() {
-    buttonDown.onClick.AddListener(requestMoveDown);
-    buttonLeft.onClick.AddListener(requestMoveLeft);
-    buttonRight.onClick.AddListener(requestMoveRight);
-    buttonUp.onClick.AddListener(requestMoveUp);
+    buttonDown.onClick.AddListener(RequestMoveDown);
+    buttonLeft.onClick.AddListener(RequestMoveLeft);
+    buttonRight.onClick.AddListener(RequestMoveRight);
+    buttonUp.onClick.AddListener(RequestMoveUp);
   }
 
   // Asks the level controller to move the player down
