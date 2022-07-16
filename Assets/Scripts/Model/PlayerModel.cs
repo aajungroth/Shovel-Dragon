@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerModel : MonoBehaviour {
+public class PlayerModel : EntityModel {
   // The direction the player is facing when the game starts
   public string intialDirection = "right";
 
