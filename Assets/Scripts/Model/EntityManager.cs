@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EntityManager : MonoBehaviour {
+  // A list of all GameObjects that are entities in the game
+  private List<GameObject> entityList;
+
   // Awake is called before any other Start method
   void Awake() {
 
