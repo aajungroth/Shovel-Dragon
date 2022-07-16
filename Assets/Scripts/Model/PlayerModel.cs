@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerModel : MonoBehaviour {
+  // The direction the player is facing when the game starts
   public string intialPlayerDirection = "right";
+
+  // The level the player will start in
   public int initialPlayerLevel = 0;
 
   // The list of initial positions the player takes in each level
