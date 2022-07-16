@@ -42,25 +42,25 @@ public class InteractableModel : MonoBehaviour {
   }
 
   // Updates the interactable's position in the model down one tile
-  public Vector2 MoveCurrentPositionDown() {
+  public Vector2 MoveDown() {
     currentPosition += Vector2.down;
     return currentPosition;
   }
 
   // Updates the interactable's position in the model left one tile
-  public Vector2 MoveCurrentPositionLeft() {
+  public Vector2 MoveLeft() {
     currentPosition += Vector2.left;
     return currentPosition;
   }
 
   // Updates the interactable's position in the model right one tile
-  public Vector2 MoveCurrentPositionRight() {
+  public Vector2 MoveRight() {
     currentPosition += Vector2.right;
     return currentPosition;
   }
 
   // Updates the interactable's position in the model up one tile
-  public Vector2 MoveCurrentPositionUp() {
+  public Vector2 MoveUp() {
     currentPosition += Vector2.up;
     return currentPosition;
   }
