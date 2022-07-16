@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrackModel : MonoBehaviour {
-  // The manager for interactable objects in the game
-  public InteractableManager interactableManager;
-
   // The game object that has the player's initial state
   public PlayerModel playerModel;
 
@@ -14,10 +11,6 @@ public class TrackModel : MonoBehaviour {
 
   // The list of initial positions the player takes in each level
   private List<Vector2> initialPlayerPositionList;
-
-  // List of objects in the game that the player interacts with
-  // that are not tiles or decorations
-  private List<Interactable> interactableList;
 
   // The list of levels as matrices that tracks empty and blocked tiles
   private List<IDictionary<string, bool>> track;
@@ -36,9 +29,6 @@ public class TrackModel : MonoBehaviour {
 
     // Get the player's starting positions
     initialPlayerPositionList = playerModel.initialPlayerPositionList;
-
-    // Get the list of interactables
-    interactableList = interactableManager.GetList();
   }
 
   // Get the current player position
@@ -49,11 +39,6 @@ public class TrackModel : MonoBehaviour {
   // Get the list of initial player positions
   public List<Vector2> GetInitialPlayerPositionList() {
     return initialPlayerPositionList;
-  }
-
-  // Get the list of interactables
-  public List<Interactable> GetInteractableList() {
-    return interactableList;
   }
 
   // Get the track of levels
