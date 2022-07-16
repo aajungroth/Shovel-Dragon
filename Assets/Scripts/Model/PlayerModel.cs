@@ -12,6 +12,9 @@ public class PlayerModel : MonoBehaviour {
   // The list of initial positions the player takes in each level
   public List<Vector2> initialPositionList;
 
+  // The amount of time for movement to be completed
+  public float timeToMove = 0.2f;
+
   // The current level the player is in
   private int currentLevel;
 
