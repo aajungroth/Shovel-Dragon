@@ -1936,6 +1936,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &576516213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576516214}
+  m_Layer: 0
+  m_Name: EntityManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &576516214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576516213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.8831067, y: 1.1535549, z: -0.17003497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &948389920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,6 +2485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1499118787}
   - component: {fileID: 1499118786}
+  - component: {fileID: 1499118788}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -2527,6 +2558,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1499118788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499118785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d67559c1b524ebc90dcd3a7b1907c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialLevel: 0
+  timeToMove: 0.2
+  initialPosition: {x: 0, y: 0}
+  isLocked: 1
 --- !u!1 &2024430539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,6 +2585,7 @@ GameObject:
   - component: {fileID: 2024430541}
   - component: {fileID: 2024430540}
   - component: {fileID: 2024430542}
+  - component: {fileID: 2024430543}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2622,8 +2670,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065476818bdcc41b8afb13503f3ecd49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonUp: {fileID: 1293428461}
-  buttonRight: {fileID: 281064856}
-  buttonDown: {fileID: 1404252804}
-  buttonLeft: {fileID: 1219072505}
+--- !u!114 &2024430543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024430539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e74b992a2644decac22fbe602685c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialLevel: 0
   timeToMove: 0.2
+  intialDirection: right
+  initialPositionList: []
