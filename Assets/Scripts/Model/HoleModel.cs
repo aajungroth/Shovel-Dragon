@@ -2,6 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HoleModel : MonoBehaviour {
+public class HoleModel : EnityModel {
 
 }
