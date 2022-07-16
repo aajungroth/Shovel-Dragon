@@ -5,11 +5,11 @@ using UnityEngine;
 public class EntityManager : MonoBehaviour {
   // Awake is called before any other Start method
   void Awake() {
-    
+
   }
 
   // Gets the list of GameObjects that are entities 
-  public List<GameObject> GetList() {
+  public List<GameObject> GetChildren() {
     List<GameObject> entityList = new List<GameObject>();
     Transform[] transformList = GetComponentsInChildren<Transform>(); 
     
