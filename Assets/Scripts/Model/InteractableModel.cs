@@ -6,6 +6,9 @@ public class InteractableModel : MonoBehaviour {
   // The level interactabl starts in
   public int initialLevel = 0;
 
+  // The starting position of the interactable
+  public Vector2 initialPosition;
+
   // Defines how the interactable's current state in a level
   public bool isActive = true;
   public bool isBuried = false;
@@ -18,9 +21,6 @@ public class InteractableModel : MonoBehaviour {
 
   // The name of the interactable's AI script if it is a monster
   public string monsterAI;
-
-  // The starting position of the interactable
-  public Vector2 startPosition;
 
   // The time it takes for movement to be completed
   public float timeToMove = 0.2f;
