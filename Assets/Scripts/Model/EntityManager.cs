@@ -12,7 +12,7 @@ public class EntityManager : MonoBehaviour {
   }
 
   // Gets the list of GameObjects that are entities 
-  public List<GameObject> GetChildren() {
+  private List<GameObject> GetChildren() {
     List<GameObject> entityList = new List<GameObject>();
     Transform[] transformList = GetComponentsInChildren<Transform>(); 
     
