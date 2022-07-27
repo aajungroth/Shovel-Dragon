@@ -48,15 +48,24 @@ public class HoleModel : EntityModel {
     // The Hole's sprite renderer
     SpriteRenderer holeSpriteRenderer = gameObject
       .GetComponent<SpriteRenderer>();
+    
+    // The sprite that renderer should be updated to render based on the size
+    Sprite updatedSprite;
 
+    // Selects the sprite based on the size
     if (Size == 'L') {
-      holeSpriteRenderer.sprite = largeHole;
+      updatedSprite = largeHole;
     }
     else if (Size == 'M') {
-      holeSpriteRenderer.sprite = mediumHole;
+      updatedSprite = mediumHole;
     }
     else if (Size == 'S') {
-      holeSpriteRenderer.sprite = smallHole;
+      updatedSprite = smallHole;
+    }
+
+    // Only updates the sprite renderer if the sprite is different
+    if (holeSpriteRenderer.sprite != updatedSprite) {
+      holeSpriteRenderer.sprite = updatedSprite;
     }
   }
 }
