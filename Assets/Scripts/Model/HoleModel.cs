@@ -54,13 +54,13 @@ public class HoleModel : EntityModel {
     Sprite updatedSprite = holeSpriteRenderer.sprite;
 
     // Selects the sprite based on the size
-    if (Size == 'L') {
+    if (size == 'L') {
       updatedSprite = largeHole;
     }
-    else if (Size == 'M') {
+    else if (size == 'M') {
       updatedSprite = mediumHole;
     }
-    else if (Size == 'S') {
+    else if (size == 'S') {
       updatedSprite = smallHole;
     }
 
