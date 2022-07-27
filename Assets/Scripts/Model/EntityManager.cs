@@ -32,7 +32,7 @@ public class EntityManager : MonoBehaviour {
     // Sets the hole's model data
     holeModel.initialLevel = initialLevel;
     holeModel.initialPosition = initialPosition;
-    holeModel.size = size;
+    holeModel.Size = size;
 
     // Places the hole GameObject under the EntityManager GameObject
     hole.transform.parent = gameObject.transform;
