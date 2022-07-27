@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HoleModel : EntityModel {
+  // The size the hole will default to win the game starts
+  public char defaultSize = 'S';
 
   // The starting position of the hole
   public Vector2 initialPosition;
@@ -33,7 +35,7 @@ public class HoleModel : EntityModel {
   // Awake is called before any other Start method
   void Awake() {
     // Ensures the private and public Size variables match when the scene loads
-    updateSprite(Size);
+    updateSprite(defaultSize);
   }
 
   // Destroys the hole's GameObject
