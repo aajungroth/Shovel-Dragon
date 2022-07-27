@@ -50,7 +50,8 @@ public class HoleModel : EntityModel {
       .GetComponent<SpriteRenderer>();
     
     // The sprite that renderer should be updated to render based on the size
-    Sprite updatedSprite;
+    // defaults to the current sprite in case an invalid size is passed in
+    Sprite updatedSprite = holeSpriteRenderer.sprite;
 
     // Selects the sprite based on the size
     if (Size == 'L') {
