@@ -1981,6 +1981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033d0a43196224e6cb311110c234d45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holePrefab: {fileID: 4750647395883071343, guid: 35829c588ef5e41e7ab3866dbe780203, type: 3}
 --- !u!1 &948389920
 GameObject:
   m_ObjectHideFlags: 0
