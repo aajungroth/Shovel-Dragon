@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,11 +25,16 @@ public class InputHandler : MonoBehaviour {
     buttonUp.onClick.AddListener(RequestMoveUp);
   }
 
+  // Enables player input
+  private void EnableInput() {
+    isInputEnabled = true;
+  }
+
   // Asks the level controller to move the player down
   private void RequestMoveDown() {
     if (isInputEnabled) {
       isInputEnabled = false;
-      levelController.HandleMoveDown();
+      levelController.HandleMoveDown(EnableInput);
     }
   }
 
@@ -36,7 +42,7 @@ public class InputHandler : MonoBehaviour {
   private void RequestMoveLeft() {
    if (isInputEnabled) {
       isInputEnabled = false;
-      levelController.HandleMoveLeft();
+      levelController.HandleMoveLeft(EnableInput);
     } 
   }
 
@@ -44,7 +50,7 @@ public class InputHandler : MonoBehaviour {
   private void RequestMoveRight() {
     if (isInputEnabled) {
       isInputEnabled = false;
-      levelController.HandleMoveRight();
+      levelController.HandleMoveRight(EnableInput);
     }
   }
 
@@ -52,7 +58,7 @@ public class InputHandler : MonoBehaviour {
   private void RequestMoveUp() {
     if (isInputEnabled) {
       isInputEnabled = false;
-      levelController.HandleMoveUp();
+      levelController.HandleMoveUp(EnableInput);
     }
   }
 }
