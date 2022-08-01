@@ -10,6 +10,7 @@ public class LevelController : MonoBehaviour {
   // Stores the layout of each level in the track
   public TrackModel trackModel;
 
+  // Action names to be used to differentiate player actions
   private string actionMoveDown = "move down";
   private string actionMoveLeft = "move left";
   private string actionMoveRight = "move right";
