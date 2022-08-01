@@ -38,7 +38,17 @@ public class LevelController : MonoBehaviour {
   // Determines if the player's attempted move will result in the
   // player moving to an empty space
   public void IsMoveValid(Vector2 move) {
+    List<IDictionary<string, bool>> track = trackModel.GetTrack();
+    GameObject player = entityManager.GetPlayer();
+    int currentLevel = 0;
+    Vector2 targetPosition = Vector2.zero;
+    string targetPositionKey = "";
 
+    currentLevel = player.GetComponent<PlayerModel>().GetCurrentLevel();
+    targetPosition = player.GetComponent<PlayerModel>().GetCurrentPosition() + move;
+    targetPositionKey = targetPosition.x.ToString() + "," + targetPosition.y.ToString();
+
+    return track[currentLevel][targetPositionKey];
   }
 
   // Takes the player's move and updates game state accordingly
