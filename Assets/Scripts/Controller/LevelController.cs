@@ -37,7 +37,7 @@ public class LevelController : MonoBehaviour {
 
   // Determines if the player's attempted move will result in the
   // player moving to an empty space
-  public void IsMoveValid(Vector2 move) {
+  public bool IsMoveValid(Vector2 move) {
     List<IDictionary<string, bool>> track = trackModel.GetTrack();
     GameObject player = entityManager.GetPlayer();
     int currentLevel = 0;
