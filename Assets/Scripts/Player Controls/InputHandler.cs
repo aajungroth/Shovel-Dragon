@@ -13,6 +13,9 @@ public class InputHandler : MonoBehaviour {
   // Only one button input will be processed at a time
   public bool isInputEnabled = true;
 
+  // Updates the model and view based on player input and detects collisions
+  public LevelController levelController;
+
   // Start is called before the first frame update
   void Start() {
     buttonDown.onClick.AddListener(RequestMoveDown);
