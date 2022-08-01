@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,23 +16,23 @@ public class LevelController : MonoBehaviour {
   private string actionMoveUp = "move up";
 
   // Handles requests to move the player down
-  public void HandleMoveDown() {
-    ExecuteTurn(Vector2.down, actionMoveDown);
+  public void HandleMoveDown(Action done) {
+    ExecuteTurn(done, Vector2.down, actionMoveDown);
   }
 
   // Handles requests to move the player left
-  public void HandleMoveLeft() {
-    ExecuteTurn(Vector2.left, actionMoveLeft);
+  public void HandleMoveLeft(Action done) {
+    ExecuteTurn(done, Vector2.left, actionMoveLeft);
   }
 
   // Handles requests to move the player right
-  public void HandleMoveRight() {
-    ExecuteTurn(Vector2.right, actionMoveRight);
+  public void HandleMoveRight(Action done) {
+    ExecuteTurn(done, Vector2.right, actionMoveRight);
   }
 
   // Handles requests to move the player up
-  public void HandleMoveUp() {
-    ExecuteTurn(Vector2.up, actionMoveUp);
+  public void HandleMoveUp(Action done) {
+    ExecuteTurn(done, Vector2.up, actionMoveUp);
   }
 
   // Determines if the player's attempted move will result in the
@@ -41,7 +42,7 @@ public class LevelController : MonoBehaviour {
   }
 
   // Takes the player's move and updates game state accordingly
-  public void ExecuteTurn(Vector2 move, string ability) {
+  public void ExecuteTurn(Action done, Vector2 move, string ability) {
 
   }
 }
