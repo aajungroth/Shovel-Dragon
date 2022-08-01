@@ -28,7 +28,7 @@ public class InputHandler : MonoBehaviour {
   private void RequestMoveDown() {
     if (isInputEnabled) {
       isInputEnabled = false;
-      // level controller function
+      levelController.HandleMoveDown();
     }
   }
 
@@ -36,7 +36,7 @@ public class InputHandler : MonoBehaviour {
   private void RequestMoveLeft() {
    if (isInputEnabled) {
       isInputEnabled = false;
-      // level controller function
+      levelController.HandleMoveLeft();
     } 
   }
 
@@ -44,7 +44,7 @@ public class InputHandler : MonoBehaviour {
   private void RequestMoveRight() {
     if (isInputEnabled) {
       isInputEnabled = false;
-      // level controller function
+      levelController.HandleMoveRight();
     }
   }
 
@@ -52,7 +52,7 @@ public class InputHandler : MonoBehaviour {
   private void RequestMoveUp() {
     if (isInputEnabled) {
       isInputEnabled = false;
-      // level controller function
+      levelController.HandleMoveUp();
     }
   }
 }
