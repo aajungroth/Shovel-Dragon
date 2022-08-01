@@ -10,30 +10,30 @@ public class LevelController : MonoBehaviour {
   // Stores the layout of each level in the track
   public TrackModel trackModel;
 
-  // Action names to be used to differentiate player actions
-  private string actionMoveDown = "move down";
-  private string actionMoveLeft = "move left";
-  private string actionMoveRight = "move right";
-  private string actionMoveUp = "move up";
+  // Ability names to be used to differentiate player abilities
+  private string abilityMoveDown = "move down";
+  private string abilityMoveLeft = "move left";
+  private string abilityMoveRight = "move right";
+  private string abilityMoveUp = "move up";
 
   // Handles requests to move the player down
   public void HandleMoveDown(Action done) {
-    ExecuteTurn(done, Vector2.down, actionMoveDown);
+    ExecuteTurn(done, Vector2.down, abilityMoveDown);
   }
 
   // Handles requests to move the player left
   public void HandleMoveLeft(Action done) {
-    ExecuteTurn(done, Vector2.left, actionMoveLeft);
+    ExecuteTurn(done, Vector2.left, abilityMoveLeft);
   }
 
   // Handles requests to move the player right
   public void HandleMoveRight(Action done) {
-    ExecuteTurn(done, Vector2.right, actionMoveRight);
+    ExecuteTurn(done, Vector2.right, abilityMoveRight);
   }
 
   // Handles requests to move the player up
   public void HandleMoveUp(Action done) {
-    ExecuteTurn(done, Vector2.up, actionMoveUp);
+    ExecuteTurn(done, Vector2.up, abilityMoveUp);
   }
 
   // Determines if the player's attempted move will result in the
