@@ -52,6 +52,11 @@ public class LevelController : MonoBehaviour {
     return track[currentLevel][targetPositionKey];
   }
 
+  // Detects collisions between entities each turn
+  public void CollisionDetection() {
+
+  }
+
   // Takes the player's move and updates game state accordingly
   public void ExecuteTurn(Action done, Vector2 move, string ability) {
 
