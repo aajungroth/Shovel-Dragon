@@ -16,6 +16,41 @@ public class LevelController : MonoBehaviour {
   private string abilityMoveRight = "move right";
   private string abilityMoveUp = "move up";
 
+  // Detects collisions between entities each turn
+  // todo add dictionary parameter
+  public void CollisionDetection() {
+
+  }
+
+  // Takes the player's move and updates game state accordingly
+  public void ExecuteTurn(Action done, Vector2 move, string ability) {
+
+  }
+
+  // Generates an action that will be run when the counter
+  // reaches the total number of entites
+  public Action<GameObject, string, string, Vector2, Vector2> GenerateCompleteAbility(
+  Action done, int entityCount) {
+    // todo add dictionary to track data
+    int completedCount = 0;
+
+    Action<GameObject, string, string, Vector2, Vector2> completeAbility = delegate(
+    GameObject entity, string abilityType, string direction,
+    Vector2 startPosition, Vector2 endPosition) {
+      completedCount++;
+      // todo add data to the dictionary
+
+      if (completedCount == entityCount) {
+        // todo update to take dictionary as argument
+        CollisionDetection();
+        // todo run update on track controller
+        done();
+      }
+    };
+
+    return completeAbility;
+  }
+
   // Handles requests to move the player down
   public void HandleMoveDown(Action done) {
     ExecuteTurn(done, Vector2.down, abilityMoveDown);
@@ -50,40 +85,5 @@ public class LevelController : MonoBehaviour {
     targetPositionKey = targetPosition.x.ToString() + "," + targetPosition.y.ToString();
 
     return track[currentLevel][targetPositionKey];
-  }
-
-  // Detects collisions between entities each turn
-  // todo add dictionary parameter
-  public void CollisionDetection() {
-
-  }
-
-  // Takes the player's move and updates game state accordingly
-  public void ExecuteTurn(Action done, Vector2 move, string ability) {
-
-  }
-
-  // Generates an action that will be run when the counter
-  // reaches the total number of entites
-  public Action<GameObject, string, string, Vector2, Vector2> GenerateCompleteAbility(
-  Action done, int entityCount) {
-    // todo add dictionary to track data
-    int completedCount = 0;
-
-    Action<GameObject, string, string, Vector2, Vector2> completeAbility = delegate(
-    GameObject entity, string abilityType, string direction,
-    Vector2 startPosition, Vector2 endPosition) {
-      completedCount++;
-      // todo add data to the dictionary
-
-      if (completedCount == entityCount) {
-        // todo update to take dictionary as argument
-        CollisionDetection();
-        // todo run update on track controller
-        done();
-      }
-    };
-
-    return completeAbility;
   }
 }
