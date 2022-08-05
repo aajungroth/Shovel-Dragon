@@ -70,14 +70,19 @@ public class EntityManager : MonoBehaviour {
 
   // Gets the list of GameObjects that are entities 
   private List<GameObject> GetChildren() {
+    // Creates a new of GameObjects for entities
     List<GameObject> entityList = new List<GameObject>();
+    // Gets the list of transforms attached to the EntityManager's transform
     Transform[] transformList = GetComponentsInChildren<Transform>(); 
 
+    // Searches through the list of transforms on the EntityManager's transform
     foreach (Transform childTransform in transformList) {
+      // Gets the GameObject off of the transform
       GameObject childGameObject = childTransform.gameObject;
 
       // Tests if the GameObject is an entity
       if (childGameObject.GetComponent<EntityModel>() != null) {
+        // Adds the entity to the list
         entityList.Add(childGameObject);
       }
     }
