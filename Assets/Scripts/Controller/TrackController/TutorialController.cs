@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrackControllerTutorial : TrackController
+public class TutorialController : TrackController
 {
 
 }
