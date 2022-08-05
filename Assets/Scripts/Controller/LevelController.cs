@@ -19,12 +19,6 @@ public class LevelController : MonoBehaviour {
   private string abilityMoveRight = "move right";
   private string abilityMoveUp = "move up";
 
-  // Detects collisions between entities each turn
-  // todo add dictionary parameter
-  public void CollisionDetection() {
-
-  }
-
   // Takes the player's move and updates game state accordingly
   public void ExecuteTurn(Action done, Vector2 move, string ability) {
 
