@@ -28,19 +28,25 @@ public class LevelController : MonoBehaviour {
   // reaches the total number of entites
   public Action<GameObject, string, string, Vector2, Vector2> GenerateCompleteAbility(
   Action done, int entityCount) {
-    // todo add dictionary to track data
     int completedCount = 0;
 
+    // This action is called by ExecuteTurn whenever an ability has been rendered by the view
     Action<GameObject, string, string, Vector2, Vector2> completeAbility = delegate(
     GameObject entity, string abilityType, string direction,
     Vector2 startPosition, Vector2 endPosition) {
+      // Creates a new event that can be registered with the track controller
+      
+
+      // Increments the total number of completed abilities
       completedCount++;
-      // todo add data to the dictionary
+      
+      // Registers an event with the Track Controller
+      trackController.RegisterEvent();
 
       if (completedCount == entityCount) {
-        // todo update to take dictionary as argument
+        // Detects collisions based on the registered events
         trackController.CollisionDetection();
-        // todo run update on track controller
+        // Runs code that is to executed once all events have been registered
         done();
       }
     };
