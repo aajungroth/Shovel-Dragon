@@ -35,14 +35,21 @@ public class LevelController : MonoBehaviour {
     GameObject entity, string abilityType, string direction,
     Vector2 startPosition, Vector2 endPosition) {
       // Creates a new event that can be registered with the track controller
-      
+      EventModel eventModel = new EventModel();
+      eventModel.abilityType = abilityType;
+      eventModel.direction = direction;
+      eventModel.endPosition = endPosition;
+      eventModel.entity = entity;
+      eventModel.startPosition = startPosition;
 
       // Increments the total number of completed abilities
       completedCount++;
       
       // Registers an event with the Track Controller
-      trackController.RegisterEvent();
+      trackController.RegisterEvent(eventModel);
 
+      // Tests if the number of completed abilities matches
+      // the number of entities
       if (completedCount == entityCount) {
         // Detects collisions based on the registered events
         trackController.CollisionDetection();
