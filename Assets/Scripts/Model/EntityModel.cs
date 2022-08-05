@@ -28,7 +28,7 @@ public class EntityModel : MonoBehaviour {
   }
 
   // Gets the entity's current direction
-  public int GetCurrentDirection() {
+  public string GetCurrentDirection() {
     return currentDirection;
   }
 
@@ -67,7 +67,7 @@ public class EntityModel : MonoBehaviour {
   }
 
   // Updates the entity's direction
-  public int SetCurrentDirection(string nextDirection) {
+  public string SetCurrentDirection(string nextDirection) {
     currentDirection = nextDirection;
     return currentDirection;
   }
