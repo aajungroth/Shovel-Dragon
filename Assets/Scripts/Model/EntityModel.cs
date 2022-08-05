@@ -24,6 +24,9 @@ public class EntityModel : MonoBehaviour {
   // The current position of the entity
   private Vector2 currentPosition;
 
+  // The role the track controller uses to distinguish entities
+  private string role = "default";
+
   // Awake is called before any other Start method
   void Awake() {
     // Set private variables based on initial data
@@ -45,6 +48,11 @@ public class EntityModel : MonoBehaviour {
   // Gets the entity's current position
   public Vector2 GetCurrentPosition() {
     return currentPosition;
+  }
+
+  // Gets the entity's role
+  public string GetRole() {
+    return role;
   }
 
   // Updates the entity's position in the model down one tile
@@ -91,5 +99,11 @@ public class EntityModel : MonoBehaviour {
   public Vector2 SetCurrentPosition(Vector2 nextPosition) {
     currentPosition = nextPosition;
     return currentPosition;
+  }
+
+  // Updates the entity's role
+  public string SetRole(string newRole) {
+    role = newRole;
+    return role;    
   }
 }
