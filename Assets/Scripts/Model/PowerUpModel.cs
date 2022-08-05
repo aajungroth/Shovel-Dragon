@@ -11,7 +11,7 @@ public class PowerUpModel : EntityModel {
 
   // The name of what the power up is following
   // ie none, player, MonsterAI names
-  public string leader;
+  public string leader = "none";
 
   // The name of the power up
   public string powerUpName;
