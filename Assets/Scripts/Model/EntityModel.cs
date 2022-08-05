@@ -28,6 +28,8 @@ public class EntityModel : MonoBehaviour {
   void Awake() {
     // Set private variables based on initial data
     currentDirection = initialDirection;
+    currentLevel = initialLevel;
+    currentPosition = intialPosition;
   }
 
   // Gets the entity's current direction
