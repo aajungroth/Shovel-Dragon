@@ -39,7 +39,7 @@ public class LevelController : MonoBehaviour {
 
       if (completedCount == entityCount) {
         // todo update to take dictionary as argument
-        CollisionDetection();
+        trackController.CollisionDetection();
         // todo run update on track controller
         done();
       }
