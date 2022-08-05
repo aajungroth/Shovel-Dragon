@@ -7,6 +7,9 @@ public class LevelController : MonoBehaviour {
   // Manages all of the entities in the game
   public EntityManager entityManager;
 
+  // Controls the result of entities colliding
+  public TrackController trackController;
+
   // Stores the layout of each level in the track
   public TrackModel trackModel;
 
