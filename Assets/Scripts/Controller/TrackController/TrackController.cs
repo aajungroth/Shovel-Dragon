@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class TrackController : MonoBehaviour
 {
-  public void CollisionDetection() {}
+  public void CollisionDetection() {
 
-  public void RegisterEvent() {}
+  }
 
-  public void ResetLevel() {}
+  public void RegisterEvent(EventModel event) {
+
+  }
+
+  public void ResetLevel() {
+    
+  }
 }
