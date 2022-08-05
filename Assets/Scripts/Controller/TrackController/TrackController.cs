@@ -11,7 +11,7 @@ public class TrackController : MonoBehaviour {
 
   }
 
-  public void ResetLevel() {
+  protected void ResetLevel() {
 
   }
 }
