@@ -7,7 +7,7 @@ public class TrackController : MonoBehaviour {
 
   }
 
-  public void RegisterEvent(EventModel event) {
+  public void RegisterEvent(EventModel eventModel) {
 
   }
 
