@@ -7,6 +7,6 @@ public class EventModel : MonoBehaviour
   public string abilityType;
   public string direction;
   public Vector2 endPosition;
-  public GameObject entityReference;
+  public GameObject entity;
   public Vector2 startPosition;
 }
