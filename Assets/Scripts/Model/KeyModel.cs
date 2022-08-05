@@ -11,5 +11,5 @@ public class KeyModel : EntityModel {
 
   // The name of what the key is following
   // ie none, player, or MonsterAI names
-  public string leader = none;
+  public string leader = "none";
 }
