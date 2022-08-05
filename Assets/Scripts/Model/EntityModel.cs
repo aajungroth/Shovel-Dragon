@@ -82,8 +82,8 @@ public class EntityModel : MonoBehaviour {
   }
 
   // Updates the entity's position in the model to a specific tile
-  public Vector2 SetCurrentPosition(Vector2 positionNext) {
-    currentPosition = positionNext;
+  public Vector2 SetCurrentPosition(Vector2 nextPosition) {
+    currentPosition = nextPosition;
     return currentPosition;
   }
 }
