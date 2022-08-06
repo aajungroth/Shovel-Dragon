@@ -4,9 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelController : MonoBehaviour {
-  // Stores the ability strings for entity abilities
-  public AbilityModel abilityModel;
-
   // Manages all of the entities in the game
   public EntityManager entityManager;
 
