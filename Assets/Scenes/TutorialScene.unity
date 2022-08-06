@@ -2168,6 +2168,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219072503}
   m_CullTransparentMesh: 1
+--- !u!1 &1246083149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246083151}
+  - component: {fileID: 1246083150}
+  m_Layer: 0
+  m_Name: AbilityManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1246083150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246083149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c6ee40b6aa04d868c7b8be15bf9f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1246083151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246083149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7001038, y: -0.29906094, z: -14.849521}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1277617694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,6 +2241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityManager: {fileID: 576516215}
+  trackController: {fileID: 0}
+  trackModel: {fileID: 0}
 --- !u!4 &1277617696
 Transform:
   m_ObjectHideFlags: 0
@@ -2630,9 +2675,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d67559c1b524ebc90dcd3a7b1907c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialDirection: right
   initialLevel: 0
+  intialPosition: {x: 0, y: 0}
   timeToMove: 0.2
-  initialPosition: {x: 0, y: 0}
   isLocked: 1
 --- !u!1 &2024430539
 GameObject:
@@ -2742,7 +2788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e74b992a2644decac22fbe602685c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialDirection: right
   initialLevel: 0
+  intialPosition: {x: 0, y: 0}
   timeToMove: 0.2
-  intialDirection: right
-  initialPositionList: []
+  followerList: []
