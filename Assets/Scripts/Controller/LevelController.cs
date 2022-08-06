@@ -60,22 +60,22 @@ public class LevelController : MonoBehaviour {
 
   // Handles requests to move the player down
   public void HandleMoveDown(Action done) {
-    ExecuteTurn(done, Vector2.down, abilityMoveDown);
+    ExecuteTurn(done, Vector2.down, AbilityModel.moveDown);
   }
 
   // Handles requests to move the player left
   public void HandleMoveLeft(Action done) {
-    ExecuteTurn(done, Vector2.left, abilityMoveLeft);
+    ExecuteTurn(done, Vector2.left, AbilityModel.moveLeft);
   }
 
   // Handles requests to move the player right
   public void HandleMoveRight(Action done) {
-    ExecuteTurn(done, Vector2.right, abilityMoveRight);
+    ExecuteTurn(done, Vector2.right, AbilityModel.moveRight);
   }
 
   // Handles requests to move the player up
   public void HandleMoveUp(Action done) {
-    ExecuteTurn(done, Vector2.up, abilityMoveUp);
+    ExecuteTurn(done, Vector2.up, AbilityModel.moveUp);
   }
 
   // Determines if the player's attempted move will result in the
