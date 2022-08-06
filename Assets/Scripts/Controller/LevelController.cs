@@ -13,12 +13,6 @@ public class LevelController : MonoBehaviour {
   // Stores the layout of each level in the track
   public TrackModel trackModel;
 
-  // Ability names to be used to differentiate player abilities
-  private string abilityMoveDown = "move down";
-  private string abilityMoveLeft = "move left";
-  private string abilityMoveRight = "move right";
-  private string abilityMoveUp = "move up";
-
   // Takes the player's move and updates game state accordingly
   public void ExecuteTurn(Action done, Vector2 move, string ability) {
 
