@@ -7,6 +7,9 @@ public class LevelController : MonoBehaviour {
   // Manages all of the entities in the game
   public EntityManager entityManager;
 
+  // Manages all of the monster AIs for the track
+  public MonsterAIManager monsterAIManager;
+
   // Controls the result of entities colliding
   public TrackController trackController;
 
