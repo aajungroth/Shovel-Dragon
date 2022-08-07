@@ -2,17 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterAIManager : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class MonsterAIManager : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
