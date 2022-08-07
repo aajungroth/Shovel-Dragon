@@ -6,22 +6,30 @@ using UnityEngine;
 public class InvalidGridMovement : MonoBehaviour {
   // Starts the coroutine to feint a transform down
   public void FeintTransformDown(Action done, Transform targetTransform, float timeToMove) {
-    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, Vector3.down));
+    Vector3 feintDown = new Vector3(0, -0.5f, 0);
+
+    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, feintDown));
   }
 
   // Starts the coroutine to feint a transform left
   public void FeintTransformLeft(Action done, Transform targetTransform, float timeToMove) {
-    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, Vector3.left));
+    Vector3 feintLeft = new Vector3(-0.5f, 0, 0);
+
+    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, feintLeft));
   }
 
   // Starts the coroutine to feint a transform right
   public void FeintTransformRight(Action done, Transform targetTransform, float timeToMove) {
-    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, Vector3.right));
+    Vector3 feintRight = new Vector3(0.5f, 0, 0);
+
+    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, feintRight));
   }
 
   // Starts the coroutine to feint a transform up
   public void FeintTransformUp(Action done, Transform targetTransform, float timeToMove) {
-    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, Vector3.up));
+    Vector3 feintUp = new Vector3(0, 0.5f, 0);
+
+    StartCoroutine(FeintTransform(done, targetTransform, timeToMove, feintUp));
   }
 
   // Feints a transform in the requested time and direction and signals when the movement is complete
