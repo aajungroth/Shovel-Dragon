@@ -38,7 +38,7 @@ public class GridMovement : MonoBehaviour {
       yield return null;
     }
 
-    // Ensures the Game Object reaches the target position exactly
+    // Ensures the GameObject reaches the target position exactly
     targetTransform.position = targetPosition;
 
     // Signals to the original caller that the coroutine is finished
