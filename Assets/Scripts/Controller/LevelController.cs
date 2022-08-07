@@ -15,7 +15,31 @@ public class LevelController : MonoBehaviour {
 
   // Takes the player's move and updates game state accordingly
   public void ExecuteTurn(Action done, Vector2 move, string ability) {
+    // The list of entities in the game
+    List<GameObject> entityList = entityManager.GetList();
 
+    // This action is called when an ability has finished rendering on the view
+    Action completeAbility = GenerateCompleteAbility(done, entityList.Count);
+    
+    // Loop through all of the entities in the game
+    foreach (GameObject entity in entityList) {
+      // Updates the player based on the selected ability
+      if (entity.GetComponent<PlayerModel> != null) {
+
+      }
+      // Updates the monsters based on their AI
+      else if (entity.GetComponent<MonsterModel> != null) {
+
+      }
+      // Updates the power ups to move if they have a leader
+      else if (entity.GetComponent<PowerUpModel> != null) {
+
+      }
+      // Updates the keys to move if they have a leader
+      else if (entity.GetComponent<KeyModel> != null) {
+
+      }
+    }
   }
 
   // Generates an action that will be run when the counter
