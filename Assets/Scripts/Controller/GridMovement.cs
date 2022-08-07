@@ -24,7 +24,7 @@ public class GridMovement : MonoBehaviour {
     StartCoroutine(MoveTransform(done, targetTransform, timeToMove, Vector3.up));
   }
 
-  // Moves a transform in the requested time and diretion and signals when the movement is complete
+  // Moves a transform in the requested time and direction and signals when the movement is complete
   private IEnumerator MoveTransform(Action done, Transform targetTransform, float timeToMove, Vector3 direction) {
     Vector3 originalPosition = targetTransform.position;
     Vector3 targetPosition = originalPosition + direction;
