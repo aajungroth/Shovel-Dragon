@@ -27,19 +27,19 @@ public class LevelController : MonoBehaviour {
     // Loop through all of the entities in the game
     foreach (GameObject entity in entityList) {
       // Updates the player based on the selected ability
-      if (entity.GetComponent<PlayerModel> != null) {
+      if (entity.GetComponent<PlayerModel>() != null) {
 
       }
       // Updates the monsters based on their AI
-      else if (entity.GetComponent<MonsterModel> != null) {
+      else if (entity.GetComponent<MonsterModel>() != null) {
 
       }
       // Updates the power ups to move if they have a leader
-      else if (entity.GetComponent<PowerUpModel> != null) {
+      else if (entity.GetComponent<PowerUpModel>() != null) {
 
       }
       // Updates the keys to move if they have a leader
-      else if (entity.GetComponent<KeyModel> != null) {
+      else if (entity.GetComponent<KeyModel>() != null) {
 
       }
     }
