@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterAIManager : MonoBehaviour {
   // Stores the Monster AI scripts by an AI name
-  IDictionary<string, MonsterAI> monsterAIByName;
+  protected IDictionary<string, MonsterAI> monsterAIByName;
 
   // Calls the Monster AI script to get the AI's next move
   public Vector2 GetMonsterMove(List<EntityModel> entityList,
