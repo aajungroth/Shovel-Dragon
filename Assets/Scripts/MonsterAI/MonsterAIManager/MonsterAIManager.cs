@@ -8,14 +8,14 @@ public class MonsterAIManager : MonoBehaviour {
 
   // Calls the Monster AI script to get the AI's next move
   public Vector2 GetEntityMove(List<EntityModel> entityList,
-  TrackModel trackModel, EntityModel entity, string monsterAIName) {
+  TrackModel trackModel, EntityModel entity) {
     Vector2 move = Vector2.zero;
 
     // Makes sure that the requested monster AI exists
-    if (monsterAIByName.ContainsKey(monsterAIName)) {
+    if (monsterAIByName.ContainsKey(entity.monsterAI)) {
       // Gets the monster AI script by name from the dictionary and calls
       // the GetMove method to get the next position to move to
-      move = monsterAIByName[monsterAIName]
+      move = monsterAIByName[entity.monsterAI]
         .GetMove(entityList, trackModel, entity);
     }
 
