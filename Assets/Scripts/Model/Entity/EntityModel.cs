@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EntityModel : MonoBehaviour {
+  // The name of the AI used by the entity
+  public string AIName = "none";
+
   // The direction the entity is facing when the game starts
   public string initialDirection = "right";
 
