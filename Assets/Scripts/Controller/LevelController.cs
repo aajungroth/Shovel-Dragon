@@ -101,20 +101,4 @@ public class LevelController : MonoBehaviour {
   public void HandleMoveUp(Action done) {
     ExecuteTurn(done, Vector2.up, AbilityModel.moveUp);
   }
-
-  // Determines if the player's attempted move will result in the
-  // player moving to an empty space
-  public bool IsMoveValid(Vector2 move) {
-    List<IDictionary<string, bool>> track = trackModel.GetTrack();
-    GameObject player = entityManager.GetPlayer();
-    int currentLevel = 0;
-    Vector2 targetPosition = Vector2.zero;
-    string targetPositionKey = "";
-
-    currentLevel = player.GetComponent<PlayerModel>().GetCurrentLevel();
-    targetPosition = player.GetComponent<PlayerModel>().GetCurrentPosition() + move;
-    targetPositionKey = targetPosition.x.ToString() + "," + targetPosition.y.ToString();
-
-    return track[currentLevel][targetPositionKey];
-  }
 }
