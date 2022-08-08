@@ -7,7 +7,7 @@ public class MonsterAIManager : MonoBehaviour {
   protected IDictionary<string, MonsterAI> monsterAIByName;
 
   // Calls the Monster AI script to get the AI's next move
-  public Vector2 GetEntityMove(List<EntityModel> entityList,
+  public Vector2 GetEntityMove(List<GameObject> entityList,
   TrackModel trackModel, EntityModel entity) {
     Vector2 move = Vector2.zero;
 
