@@ -8,7 +8,7 @@ public class MonsterAIManager : MonoBehaviour {
 
   // Calls the Monster AI script to get the AI's next move
   public Vector2 GetMonsterMove(List<EntityModel> entityList,
-  TrackModel trackModel, MonsterModel monster, string monsterAIName) {
+  TrackModel trackModel, EntityModel entity, string monsterAIName) {
     Vector2 move = Vector2.zero;
 
     // Makes sure that the requested monster AI exists
@@ -16,7 +16,7 @@ public class MonsterAIManager : MonoBehaviour {
       // Gets the monster AI script by name from the dictionary and calls
       // the GetMove method to get the next position to move to
       move = monsterAIByName[monsterAIName]
-        .GetMove(entityList, trackModel, monster);
+        .GetMove(entityList, trackModel, entity);
     }
 
     return move;
