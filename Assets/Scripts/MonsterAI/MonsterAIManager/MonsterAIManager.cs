@@ -12,10 +12,10 @@ public class MonsterAIManager : MonoBehaviour {
     Vector2 move = Vector2.zero;
 
     // Makes sure that the requested monster AI exists
-    if (monsterAIByName.ContainsKey(entity.monsterAI)) {
+    if (monsterAIByName.ContainsKey(entity.AIName)) {
       // Gets the monster AI script by name from the dictionary and calls
       // the GetMove method to get the next position to move to
-      move = monsterAIByName[entity.monsterAI]
+      move = monsterAIByName[entity.AIName]
         .GetMove(entityList, trackModel, entity);
     }
 
