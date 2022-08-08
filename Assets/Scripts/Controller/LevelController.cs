@@ -22,7 +22,8 @@ public class LevelController : MonoBehaviour {
     List<GameObject> entityList = entityManager.GetList();
 
     // This action is called when an ability has finished rendering on the view
-    Action completeAbility = GenerateCompleteAbility(done, entityList.Count);
+    Action<GameObject, string, string, Vector2, Vector2> completeAbility = 
+      GenerateCompleteAbility(done, entityList.Count);
     
     // Loop through all of the entities in the game
     foreach (GameObject entity in entityList) {
