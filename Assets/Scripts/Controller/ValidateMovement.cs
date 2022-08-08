@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class ValidateMovement : MonoBehaviour {
+public class ValidateMovement : MonoBehaviour {
   // Determines if the entity's attempted move will result in the
   // entity moving to an empty space
   public static bool IsMoveValid(EntityModel entity, TrackModel trackModel, Vector2 move) {
