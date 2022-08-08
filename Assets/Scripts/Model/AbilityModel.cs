@@ -8,4 +8,5 @@ public class AbilityModel : MonoBehaviour {
   public const string moveLeft = "move left";
   public const string moveRight = "move right";
   public const string moveUp = "move up";
+  public const string none = 'none';
 }
