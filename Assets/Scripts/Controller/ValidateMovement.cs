@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ValidateMovement : MonoBehaviour {
-  // Determines if the player's attempted move will result in the
-  // player moving to an empty space
+  // Determines if the entity's attempted move will result in the
+  // entity moving to an empty space
   public bool IsMoveValid(EntityMpdel entity, TrackModel trackModel, Vector2 move) {
     List<IDictionary<string, bool>> track = trackModel.GetTrack();
     int currentLevel = 0;
