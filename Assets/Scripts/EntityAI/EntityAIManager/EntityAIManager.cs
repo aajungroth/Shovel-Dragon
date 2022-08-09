@@ -7,27 +7,26 @@ public class EntityAIManager : MonoBehaviour {
   protected IDictionary<string, EntityAI> entityAIByName;
 
   // Calls the Entity AI script to get the AI's next move
-  public EventModel GetEntityEvent(string ability, GameObject entity,
-  List<GameObject> entityList, TrackModel trackModel) {
+  public EventModel GetEntityEvent(GameObject entity,
+  List<GameObject> entityList, string playerAbility, Vector2 playerDirection,
+  TrackModel trackModel) {
+    // Gets the name of the AI that the entity is using
     string AIName = entity.GetComponent<EntityModel>().AIName;
-    Vector2 currentPosition = entity.GetComponent<EntityModel>().GetCurrentPosition();
-    Vector2 direction = Vector2.zero;
+
+    // Creates a new event that can be registered with the track controller
+    EventModel entityEvent = new EventModel();
+    entityEvent.startPosition = entity
+      .GetComponent<EntityModel>()
+      .GetCurrentPosition();
 
     // Makes sure that the requested entity AI exists
     if (entityAIByName.ContainsKey(AIName)) {
       // Gets the entity AI script by name from the dictionary and calls
       // the GetMove method to get the next position to move to
-      direction = entityAIByName[AIName]
-        .GetDirection(ability, entity, entityList, trackModel);
+      entityEvent = entityAIByName[AIName]
+        .GetEvent(entity, entityEvent, entityList, playerAbility,
+        playerDirection, trackModel);
     }
-
-    // Creates a new event that can be registered with the track controller
-    EventModel entityEvent = new EventModel();
-    entityEvent.ability = ability;
-    entityEvent.direction = direction;
-    entityEvent.endPosition = currentPosition + direction;
-    entityEvent.entity = entity;
-    entityEvent.startPosition = currentPosition;
 
     return entityEvent;
   }
