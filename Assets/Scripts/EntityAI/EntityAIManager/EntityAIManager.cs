@@ -7,7 +7,7 @@ public class EntityAIManager : MonoBehaviour {
   protected IDictionary<string, EntityAI> entityAIByName;
 
   // Calls the Entity AI script to get the AI's next move
-  public EventModel GetEntityEvent(string ability, EntityModel entity,
+  public EventModel GetEntityEvent(string ability, GameObject entity,
   List<GameObject> entityList, TrackModel trackModel) {
     Vector2 currentPosition = entity.GetCurrentPosition();
     Vector2 direction = Vector2.zero;
