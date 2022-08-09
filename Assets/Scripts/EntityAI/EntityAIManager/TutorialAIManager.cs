@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TutorialAIManager : MonsterAIManager {
+public class TutorialAIManager : EntityAIManager {
   // The AI script used for the track
   public FixedMovementAI fixedMovementAI;
 
@@ -12,6 +12,6 @@ public class TutorialAIManager : MonsterAIManager {
   // Awake is called before any other Start method
   void Awake() {
     // Add the AI script to the dictionary by name
-    monsterAIByName.Add(fixedMovementAIName, fixedMovementAI);
+    entityAIByName.Add(fixedMovementAIName, fixedMovementAI);
   }
 }
