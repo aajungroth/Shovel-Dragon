@@ -9,14 +9,15 @@ public class EntityAIManager : MonoBehaviour {
   // Calls the Entity AI script to get the AI's next move
   public EventModel GetEntityEvent(string ability, GameObject entity,
   List<GameObject> entityList, TrackModel trackModel) {
+    string AIName = entity.GetComponent<EntityModel>().AIName;
     Vector2 currentPosition = entity.GetCurrentPosition();
     Vector2 direction = Vector2.zero;
 
     // Makes sure that the requested entity AI exists
-    if (entityAIByName.ContainsKey(entity.AIName)) {
+    if (entityAIByName.ContainsKey(AIName)) {
       // Gets the entity AI script by name from the dictionary and calls
       // the GetMove method to get the next position to move to
-      direction = entityAIByName[entity.AIName]
+      direction = entityAIByName[AIName]
         .GetDirection(ability, entity, entityList, trackModel);
     }
 
