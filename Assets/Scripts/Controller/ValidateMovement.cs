@@ -5,7 +5,7 @@ using UnityEngine;
 public class ValidateMovement : MonoBehaviour {
   // Determines if the entity's attempted move will result in the
   // entity moving to an empty space
-  public static bool IsMoveValid(TrackModel trackModel, EntityModel entity, Vector2 move) {
+  public static bool IsMoveValid(Vector2 direction, TrackModel trackModel, EntityModel entity) {
     List<IDictionary<string, bool>> track = trackModel.GetTrack();
     int currentLevel = 0;
     Vector2 targetPosition = Vector2.zero;
