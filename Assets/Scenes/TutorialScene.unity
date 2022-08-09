@@ -2348,7 +2348,7 @@ MonoBehaviour:
   entityAIManager: {fileID: 0}
   gridMovement: {fileID: 1277617698}
   invalidGridMovement: {fileID: 1277617697}
-  trackController: {fileID: 0}
+  trackController: {fileID: 912299068}
   trackModel: {fileID: 1125936864}
 --- !u!4 &1277617696
 Transform:
