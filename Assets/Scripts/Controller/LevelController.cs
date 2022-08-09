@@ -10,6 +10,12 @@ public class LevelController : MonoBehaviour {
   // Manages all of the entity AIs for the track
   public EntityAIManager entityAIManager;
 
+  // Handles rendering valid movement to the view
+  public GridMovement gridMovement;
+
+  // Handles rendering invalid movement attempts to the view
+  public InvalidGridMovement invalidGridMovement;
+
   // Controls the result of entities colliding
   public TrackController trackController;
 
@@ -42,11 +48,11 @@ public class LevelController : MonoBehaviour {
       }
       // Valid moves will be rendered on the view
       else if (ValidateMovement.IsMoveValid(entityEvent.direction, entity, trackModel)) {
-        GridMovement.MoveTransformInDirection(completeAbility, entityEvent);
+        gridMovement.MoveTransformInDirection(completeAbility, entityEvent);
       }
       // Invalid moves will be rendered as an attempted move
       else {
-        InvalidGridMovement.FeintTransformInDirection(completeAbility, entityEvent);
+        invalidGridMovement.FeintTransformInDirection(completeAbility, entityEvent);
       }
     }
   }
