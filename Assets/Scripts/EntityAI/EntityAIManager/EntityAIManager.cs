@@ -23,11 +23,11 @@ public class EntityAIManager : MonoBehaviour {
 
     // Creates a new event that can be registered with the track controller
     EventModel entityEvent = new EventModel();
-    eventModel.ability = ability;
-    eventModel.direction = direction;
-    eventModel.endPosition = currentPosition + direction;
-    eventModel.entity = entity;
-    eventModel.startPosition = currentPosition;
+    entityEvent.ability = ability;
+    entityEvent.direction = direction;
+    entityEvent.endPosition = currentPosition + direction;
+    entityEvent.entity = entity;
+    entityEvent.startPosition = currentPosition;
 
     return entityEvent;
   }
