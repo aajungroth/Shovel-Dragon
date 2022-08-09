@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TutorialMonsterAIManager : MonsterAIManager {
+public class TutorialAIManager : MonsterAIManager {
   // The AI script used for the track
   public FixedMovementAI fixedMovementAI;
 
