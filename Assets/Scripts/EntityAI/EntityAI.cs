@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EntityAI : MonoBehaviour {
-  public virtual Vector2 GetDirection(string ability, GameObject entity,
-  List<GameObject> entityList, TrackModel trackModel) {
-    return Vector2.zero;
+  public virtual EventModel GetEvent(GameObject entity, EventModel entityEvent,
+  List<GameObject> entityList, string playerAbility, Vector2 playerDirection,
+  TrackModel trackModel) {
+    // Returns a default entity with the associated EntityModel
+    entityEvent.entity = entity;
+
+    return entityEvent;
   }
 }
