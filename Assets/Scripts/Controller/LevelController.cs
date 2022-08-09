@@ -30,7 +30,7 @@ public class LevelController : MonoBehaviour {
     // Loop through all of the entities in the game
     foreach (GameObject entity in entityList) {
       // Gets an event from the entity's AI script
-      eventModel = entityAIManager.GetEntityEvent(entity, entityList, trackModel);
+      eventModel = entityAIManager.GetEntityEvent(ability, entity, entityList, trackModel);
 
       // Registers the event with the track model 
       trackController.RegisterEvent(eventModel);
