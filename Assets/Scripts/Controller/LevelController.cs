@@ -23,7 +23,7 @@ public class LevelController : MonoBehaviour {
   public TrackModel trackModel;
 
   // Takes the player's move and updates game state accordingly
-  public void ExecuteTurn(string ability, Action done, Vector2 playerDirection) {
+  public void ExecuteTurn(Action done, string playerAbility, Vector2 playerDirection) {
     // The list of entities in the game
     List<GameObject> entityList = entityManager.GetList();
 
@@ -37,7 +37,8 @@ public class LevelController : MonoBehaviour {
     foreach (GameObject entity in entityList) {
       // Gets an event from the entity's AI script
       entityEvent = entityAIManager
-        .GetEntityEvent(ability, entity, entityList, playerDirection, trackModel);
+        .GetEntityEvent(entity, entityList, playerAbility, playerDirection,
+        trackModel);
 
       // Registers the event with the track model 
       trackController.RegisterEvent(entityEvent);
@@ -47,7 +48,8 @@ public class LevelController : MonoBehaviour {
         completeAbility();
       }
       // Valid moves will be rendered on the view
-      else if (ValidateMovement.IsMoveValid(entityEvent.direction, entity, trackModel)) {
+      else if (ValidateMovement.IsMoveValid(entityEvent.direction, entity,
+      trackModel)) {
         gridMovement.MoveTransformInDirection(completeAbility, entityEvent);
       }
       // Invalid moves will be rendered as an attempted move
@@ -82,21 +84,21 @@ public class LevelController : MonoBehaviour {
 
   // Handles requests to move the player down
   public void HandleMoveDown(Action done) {
-    ExecuteTurn(AbilityModel.moveDown, done, Vector2.down);
+    ExecuteTurn(done, AbilityModel.moveDown, Vector2.down);
   }
 
   // Handles requests to move the player left
   public void HandleMoveLeft(Action done) {
-    ExecuteTurn(AbilityModel.moveLeft, done, Vector2.left);
+    ExecuteTurn(done, AbilityModel.moveLeft, Vector2.left);
   }
 
   // Handles requests to move the player right
   public void HandleMoveRight(Action done) {
-    ExecuteTurn(AbilityModel.moveRight, done, Vector2.right);
+    ExecuteTurn(done, AbilityModel.moveRight, Vector2.right);
   }
 
   // Handles requests to move the player up
   public void HandleMoveUp(Action done) {
-    ExecuteTurn(AbilityModel.moveUp, done, Vector2.up);
+    ExecuteTurn(done, AbilityModel.moveUp, Vector2.up);
   }
 }
