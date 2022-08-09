@@ -2345,7 +2345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityManager: {fileID: 576516215}
-  entityAIManager: {fileID: 0}
+  entityAIManager: {fileID: 1966630172}
   gridMovement: {fileID: 1277617698}
   invalidGridMovement: {fileID: 1277617697}
   trackController: {fileID: 912299068}
