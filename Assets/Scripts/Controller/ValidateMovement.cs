@@ -12,7 +12,7 @@ public class ValidateMovement : MonoBehaviour {
     string targetPositionKey = "";
 
     currentLevel = entity.GetComponent<EntityModel>().GetCurrentLevel();
-    targetPosition = entity.GetComponent<EntityModel>().GetCurrentPosition() + move;
+    targetPosition = entity.GetComponent<EntityModel>().GetCurrentPosition() + direction;
     targetPositionKey = targetPosition.x.ToString() + "," + targetPosition.y.ToString();
 
     return track[currentLevel][targetPositionKey];
