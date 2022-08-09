@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EventModel : MonoBehaviour
 {
-  public string abilityType;
+  public string ability;
   public string direction;
   public Vector2 endPosition;
   public GameObject entity;
