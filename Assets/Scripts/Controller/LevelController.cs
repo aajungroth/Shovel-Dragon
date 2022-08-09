@@ -17,7 +17,7 @@ public class LevelController : MonoBehaviour {
   public TrackModel trackModel;
 
   // Takes the player's move and updates game state accordingly
-  public void ExecuteTurn(Action done, Vector2 move, string ability) {
+  public void ExecuteTurn(string ability, Action done, Vector2 playerDirection) {
     // The list of entities in the game
     List<GameObject> entityList = entityManager.GetList();
 
@@ -76,21 +76,21 @@ public class LevelController : MonoBehaviour {
 
   // Handles requests to move the player down
   public void HandleMoveDown(Action done) {
-    ExecuteTurn(done, Vector2.down, AbilityModel.moveDown);
+    ExecuteTurn(AbilityModel.moveDown, done, Vector2.down);
   }
 
   // Handles requests to move the player left
   public void HandleMoveLeft(Action done) {
-    ExecuteTurn(done, Vector2.left, AbilityModel.moveLeft);
+    ExecuteTurn(AbilityModel.moveLeft, done, Vector2.left);
   }
 
   // Handles requests to move the player right
   public void HandleMoveRight(Action done) {
-    ExecuteTurn(done, Vector2.right, AbilityModel.moveRight);
+    ExecuteTurn(AbilityModel.moveRight, done, Vector2.right);
   }
 
   // Handles requests to move the player up
   public void HandleMoveUp(Action done) {
-    ExecuteTurn(done, Vector2.up, AbilityModel.moveUp);
+    ExecuteTurn(AbilityModel.moveUp, done, Vector2.up);
   }
 }
