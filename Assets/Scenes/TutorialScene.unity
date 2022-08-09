@@ -1964,10 +1964,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2024430541}
   - {fileID: 1499118787}
+  - {fileID: 2024430541}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &576516215
 MonoBehaviour:
@@ -2209,7 +2209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1277617694
 GameObject:
@@ -2221,6 +2221,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1277617696}
   - component: {fileID: 1277617695}
+  - component: {fileID: 1277617698}
+  - component: {fileID: 1277617697}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -2242,8 +2244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityManager: {fileID: 576516215}
   entityAIManager: {fileID: 0}
-  gridMovement: {fileID: 0}
-  invalidGridMovement: {fileID: 0}
+  gridMovement: {fileID: 1277617698}
+  invalidGridMovement: {fileID: 1277617697}
   trackController: {fileID: 0}
   trackModel: {fileID: 0}
 --- !u!4 &1277617696
@@ -2258,8 +2260,32 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1277617697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277617694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a95a58ab1a2b40a6940c11de5ba6aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1277617698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277617694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065476818bdcc41b8afb13503f3ecd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1293428459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2664,7 +2690,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0}
   m_Children: []
   m_Father: {fileID: 576516214}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1499118788
 MonoBehaviour:
@@ -2766,7 +2792,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 576516214}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2024430542
 MonoBehaviour:
