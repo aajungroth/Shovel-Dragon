@@ -14,7 +14,7 @@ public class EntityAIManager : MonoBehaviour {
     string AIName = entity.GetComponent<EntityModel>().AIName;
 
     // Creates a new event that can be registered with the track controller
-    EventModel entityEvent = new EventModel();
+    EventModel entityEvent = transform.gameObject.AddComponent<EventModel>();
     entityEvent.startPosition = entity
       .GetComponent<EntityModel>()
       .GetCurrentPosition();
