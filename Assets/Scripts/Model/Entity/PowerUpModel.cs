@@ -9,10 +9,6 @@ public class PowerUpModel : EntityModel {
   // Tests if the power up is following an entity
   public bool isFollowing = false;
 
-  // The name of what the power up is following
-  // ie none, player, MonsterAI names
-  public string leader = "none";
-
   // The name of the power up
   public string powerUpName;
 }
