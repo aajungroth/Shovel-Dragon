@@ -7,7 +7,9 @@ public class GridMovement : MonoBehaviour {
   // Starts the coroutine to move a transform in a direction
   public void MoveTransformInDirection(Action done, EventModel entityEvent) {
     Transform targetTransform = entityEvent.entity.transform;
-    float timeToMove = entityEvent.entity.GetComponent<EntityModel>().timeToMove;
+    float timeToMove = entityEvent.entity
+      .GetComponent<EntityModel>()
+      .timeToMove;
     Vector3 direction = Vector3.zero;
 
     if (entityEvent.direction == Vector2.down) {
@@ -23,11 +25,14 @@ public class GridMovement : MonoBehaviour {
       direction = Vector3.up;
     }
 
-    StartCoroutine(MoveTransform(direction, done, targetTransform, timeToMove));
+    StartCoroutine(
+      MoveTransform(direction, done, targetTransform, timeToMove));
   }
 
-  // Moves a transform in the requested time and direction and signals when the movement is complete
-  private IEnumerator MoveTransform(Vector3 direction, Action done, Transform targetTransform, float timeToMove) {
+  // Moves a transform in the requested time and direction and signals when
+  // the movement is complete
+  private IEnumerator MoveTransform(Vector3 direction, Action done,
+  Transform targetTransform, float timeToMove) {
     Vector3 originalPosition = targetTransform.position;
     Vector3 targetPosition = originalPosition + direction;
     float timeElapsed = 0;
