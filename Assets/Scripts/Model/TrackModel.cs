@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrackModel : MonoBehaviour {
   // List of level text files
-  public List<string> trackText;
+  public List<TextAsset> trackText;
 
   // The list of levels as matrices that tracks empty and blocked tiles
   private List<IDictionary<string, bool>> track;
