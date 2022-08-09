@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialAIManager : EntityAIManager {
-  // The AI script used for the track
+  // The AI scripts used for the track
   public FixedMovementAI fixedMovementAI;
+  public PlayerAI playerAI;
 
-  // The name of the AI scripts used for the dictionary key
+  // The names of the AI scripts used for the dictionary keys
   public string fixedMovementAIName = "fixed movement";
+  public string playerAIName = "player";
 
   // Awake is called before any other Start method
   void Awake() {
-    // Add the AI script to the dictionary by name
+    // Add the AI scripts to the dictionary by name
     entityAIByName.Add(fixedMovementAIName, fixedMovementAI);
+    entityAIByName.Add(playerAIName, playerAI);
   }
 }
