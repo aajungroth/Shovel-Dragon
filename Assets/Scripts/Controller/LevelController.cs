@@ -36,16 +36,16 @@ public class LevelController : MonoBehaviour {
       trackController.RegisterEvent(entityEvent);
 
       // Idling will not update the view
-      if (eventModel.direction == Vector2.zero) {
+      if (entityEvent.direction == Vector2.zero) {
         completeAbility();
       }
       // Valid moves will be rendered on the view
-      else if (ValidateMovement.IsMoveValid(eventModel.direction, entity, trackModel)) {
-        GridMovement.MoveTransformInDirection(completeAbility, eventModel);
+      else if (ValidateMovement.IsMoveValid(entityEvent.direction, entity, trackModel)) {
+        GridMovement.MoveTransformInDirection(completeAbility, entityEvent);
       }
       // Invalid moves will be rendered as an attempted move
       else {
-        InvalidGridMovement.FeintTransformInDirection(completeAbility, eventModel);
+        InvalidGridMovement.FeintTransformInDirection(completeAbility, entityEvent);
       }
     }
   }
