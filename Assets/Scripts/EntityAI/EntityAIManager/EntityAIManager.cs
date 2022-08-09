@@ -10,7 +10,7 @@ public class EntityAIManager : MonoBehaviour {
   public EventModel GetEntityEvent(string ability, GameObject entity,
   List<GameObject> entityList, TrackModel trackModel) {
     string AIName = entity.GetComponent<EntityModel>().AIName;
-    Vector2 currentPosition = entity.GetCurrentPosition();
+    Vector2 currentPosition = entity.GetComponent<EntityModel>().GetCurrentPosition();
     Vector2 direction = Vector2.zero;
 
     // Makes sure that the requested entity AI exists
