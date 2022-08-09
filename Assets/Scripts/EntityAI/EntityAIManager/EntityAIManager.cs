@@ -19,6 +19,14 @@ public class EntityAIManager : MonoBehaviour {
         .GetMove(entityList, trackModel, entity);
     }
 
+    // Creates a new event that can be registered with the track controller
+    EventModel eventModel = new EventModel();
+    eventModel.abilityType = abilityType;
+    eventModel.direction = direction;
+    eventModel.endPosition = endPosition;
+    eventModel.entity = entity;
+    eventModel.startPosition = startPosition;
+
     return move;
   }
 }
