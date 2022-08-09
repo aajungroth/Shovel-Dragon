@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FixedMovementAI : MonsterAI {
+public class FixedMovementAI : EntityAI {
   public Vector2 direction = Vector2.right;
 
-  public override Vector2 GetMove(List<EntityModel> entityList, TrackModel trackModel, EntityModel entity) {
+  public override Vector2 GetDirection(string ability, EntityModel entity, List<EntityModel> entityList, TrackModel trackModel) {
     // Tests if moving in the current direction would be invalid
-		if (!ValidateMovement.IsMoveValid(trackModel, entity, direction)) {
+		if (!ValidateMovement.IsMoveValid(direction, entity, trackModel)) {
 			// Flips the direction
       direction.x *= -1;
 			direction.y *= -1;
