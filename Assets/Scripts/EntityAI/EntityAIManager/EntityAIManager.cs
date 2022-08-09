@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterAIManager : MonoBehaviour {
+public class EntityAIManager : MonoBehaviour {
   // Stores the Monster AI scripts by an AI name
   protected IDictionary<string, MonsterAI> monsterAIByName;
 
