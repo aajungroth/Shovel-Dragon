@@ -43,16 +43,14 @@ public class InvalidGridMovement : MonoBehaviour {
     while (firstHalfInProgress && timeElapsed < timeToMove) {
       targetTransform.position = Vector3
         .Lerp(originalPosition, targetPosition, timeElapsed / timeToMove);
+      timeElapsed += Time.deltaTime;
       yield return null;
     }
 
     // Tests if the first first half of the feint completed
-    if (firstHalfInProgress && timeElapsed == timeToMove) {
+    if (firstHalfInProgress) {
       // Allows the coroutine to progress to the next half of the feint
       firstHalfInProgress = false;
-
-      // Ensures the GameObject reaches the target position exactly
-      targetTransform.position = targetPosition;
 
       // Doubles the time to move to create time for the second half
       timeToMove *= 2;
@@ -62,6 +60,7 @@ public class InvalidGridMovement : MonoBehaviour {
     while (timeElapsed < timeToMove) {
       targetTransform.position = Vector3
         .Lerp(targetPosition, originalPosition, timeElapsed / timeToMove);
+      timeElapsed += Time.deltaTime;
       yield return null;
     }
 
