@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EntityAIManager : MonoBehaviour {
   // Stores the Entity AI scripts by an AI name
-  protected IDictionary<string, EntityAI> entityAIByName;
+  protected IDictionary<string, EntityAI> entityAIByName =
+    new Dictionary<string, EntityAI>();
 
   // Calls the Entity AI script to get the AI's next move
   public EventModel GetEntityEvent(GameObject entity,
