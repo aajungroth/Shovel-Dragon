@@ -30,8 +30,24 @@ public class LevelController : MonoBehaviour {
 
     // Loop through all of the entities in the game
     foreach (GameObject entity in entityList) {
-      // Updates the entities by there AI
-      eventModel = entityAIManager.GetEntityMove(entityList, trackModel, entity);
+      // Gets an event from the entity's AI script
+      eventModel = entityAIManager.GetEntityEvent(entity, entityList, trackModel);
+
+      // Registers the event with the track model 
+      trackController.RegisterEvent(eventModel);
+
+      // Idling will not update the view
+      if (eventModel.direction == Vector2.zero) {
+        completeAbility(eventModel);
+      }
+      // Valid moves will be rendered on the view
+      else if (ValidateMovement.IsMoveValid(entity, trackModel, eventModel.direction)) {
+        GridMovement.MoveTransformInDirection(completeAbility, eventModel);
+      }
+      // Invalid moves will be rendered as an attempted move
+      else {
+        InvalidGridMovement.FeintTransformInDirection(completeAbility, eventModel);
+      }
     }
   }
 
