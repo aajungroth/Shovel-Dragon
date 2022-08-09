@@ -7,7 +7,9 @@ public class InvalidGridMovement : MonoBehaviour {
   // Starts the coroutine to feint a transform in a direction
   public void FeintTransformInDirection(Action done, EventModel entityEvent) {
     Transform targetTransform = entityEvent.entity.transform;
-    float timeToMove = entityEvent.entity.GetComponent<EntityModel>().timeToMove;
+    float timeToMove = entityEvent.entity
+      .GetComponent<EntityModel>()
+      .timeToMove;
     Vector3 direction = Vector3.zero;
 
     if (entityEvent.direction == Vector2.down) {
@@ -23,11 +25,14 @@ public class InvalidGridMovement : MonoBehaviour {
       direction = new Vector3(0, 0.5f, 0);
     }
 
-    StartCoroutine(FeintTransform(direction, done, targetTransform, timeToMove));
+    StartCoroutine(
+      FeintTransform(direction, done, targetTransform, timeToMove));
   }
 
-  // Feints a transform in the requested time and direction and signals when the movement is complete
-  private IEnumerator FeintTransform(Vector3 direction, Action done, Transform targetTransform, float timeToMove) {
+  // Feints a transform in the requested time and direction and signals when
+  // the movement is complete
+  private IEnumerator FeintTransform(Vector3 direction, Action done,
+  Transform targetTransform, float timeToMove) {
     Vector3 originalPosition = targetTransform.position;
     Vector3 targetPosition = originalPosition + direction;
     float timeElapsed = 0;
