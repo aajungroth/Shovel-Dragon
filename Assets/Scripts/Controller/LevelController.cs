@@ -40,7 +40,7 @@ public class LevelController : MonoBehaviour {
         completeAbility();
       }
       // Valid moves will be rendered on the view
-      else if (ValidateMovement.IsMoveValid(entity, trackModel, eventModel.direction)) {
+      else if (ValidateMovement.IsMoveValid(eventModel.direction, entity, trackModel)) {
         GridMovement.MoveTransformInDirection(completeAbility, eventModel);
       }
       // Invalid moves will be rendered as an attempted move
