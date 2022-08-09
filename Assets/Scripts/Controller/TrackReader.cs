@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TrackReader : MonoBehaviour {
   // Each track is a list of levels that can be progressed through
-  public List<IDictionary<string, bool>> readTrack(List<string> trackText) {
+  public List<IDictionary<string, bool>> readTrack(List<TextAsset> trackText) {
     List<IDictionary<string, bool>> track = new List<IDictionary<string, bool>>();
 
-    foreach (string levelText in trackText) {
-      track.Add(readLevel(levelText));
+    foreach (TextAsset levelText in trackText) {
+      track.Add(readLevel(levelText.text));
     }
 
     return track;
