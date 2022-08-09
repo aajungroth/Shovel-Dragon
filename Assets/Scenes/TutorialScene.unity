@@ -2241,6 +2241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityManager: {fileID: 576516215}
+  entityAIManager: {fileID: 0}
+  gridMovement: {fileID: 0}
+  invalidGridMovement: {fileID: 0}
   trackController: {fileID: 0}
   trackModel: {fileID: 0}
 --- !u!4 &1277617696
@@ -2675,9 +2678,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d67559c1b524ebc90dcd3a7b1907c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AIName: none
   initialDirection: right
   initialLevel: 0
-  intialPosition: {x: 0, y: 0}
+  intialPosition: {x: 10, y: 5}
   timeToMove: 0.2
   isLocked: 1
 --- !u!1 &2024430539
@@ -2758,7 +2762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024430539}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: -1.5, z: 0}
+  m_LocalPosition: {x: -1.5, y: 0.5, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 576516214}
@@ -2788,8 +2792,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e74b992a2644decac22fbe602685c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AIName: player
   initialDirection: right
   initialLevel: 0
-  intialPosition: {x: 0, y: 0}
+  intialPosition: {x: 5, y: 5}
   timeToMove: 0.2
   followerList: []
