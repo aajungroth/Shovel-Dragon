@@ -50,11 +50,27 @@ public class LevelController : MonoBehaviour {
       // Valid moves will be rendered on the view
       else if (ValidateMovement.IsMoveValid(entityEvent.direction, entity,
       trackModel)) {
+        // Update the entity model's current position
+        // based on the movement ability
+        if (entityEvent.ability == AbilityModel.moveDown) {
+          entity.GetComponent<EntityModel>().MoveDown();
+        }
+        else if (entityEvent.ability == AbilityModel.moveLeft) {
+          entity.GetComponent<EntityModel>().MoveRight();
+        }
+        else if (entityEvent.ability == AbilityModel.moveRight) {
+          entity.GetComponent<EntityModel>().MoveLeft();
+        }
+        else if (entityEvent.ability == AbilityModel.moveUp) {
+          entity.GetComponent<EntityModel>().MoveUp();
+        }
+
         gridMovement.MoveTransformInDirection(completeAbility, entityEvent);
       }
       // Invalid moves will be rendered as an attempted move
       else {
-        invalidGridMovement.FeintTransformInDirection(completeAbility, entityEvent);
+        invalidGridMovement
+          .FeintTransformInDirection(completeAbility, entityEvent);
       }
     }
   }
