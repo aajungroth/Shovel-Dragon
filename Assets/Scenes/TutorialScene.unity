@@ -2305,7 +2305,7 @@ MonoBehaviour:
   gridMovement: {fileID: 1277617698}
   invalidGridMovement: {fileID: 1277617697}
   trackController: {fileID: 0}
-  trackModel: {fileID: 0}
+  trackModel: {fileID: 1125936864}
 --- !u!4 &1277617696
 Transform:
   m_ObjectHideFlags: 0
