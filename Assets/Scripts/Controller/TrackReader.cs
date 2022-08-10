@@ -29,7 +29,7 @@ public class TrackReader : MonoBehaviour {
     int j = 0;
 
     // Records the max length of a row tiles
-    int jMax = 0;
+    int iMax = 0;
 
     // Swap variable
     bool temp = false;
@@ -40,27 +40,27 @@ public class TrackReader : MonoBehaviour {
         // Empty tiles can be walked on
         key = i + "," + j;
         level.Add(key, true);
-        j++;
+        i++;
       }
       else if(tile == 'X') {
         // Blocked tiles cannot be walked on
         key = i + "," + j;
         level.Add(key, false);
-        j++;
+        i++;
       }
       else if (System.Convert.ToInt32(tile) == 10) {
         // Line Feed indicates a new row of tiles
-        i++;
-        jMax = j;
-        j = 0;
+        j++;
+        iMax = i;
+        i = 0;
       }
     }
 
     // Invert the values of the level matrix vertically
-    for (int m = i - 1; m >= i / 2; m--) {
-      for (int n = 0; n < jMax; n++) {
+    for (int m = 0; m < iMax; m++) {
+      for (int n = j - 1; n >= j / 2; n--) {
         // Assemble keys
-        key = (i - m) + "," + j;
+        key = m + "," + (j - n - 1);
         keyInverted = m + "," + n;
 
         // Swap values
