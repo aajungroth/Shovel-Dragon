@@ -56,10 +56,10 @@ public class LevelController : MonoBehaviour {
           entity.GetComponent<EntityModel>().MoveDown();
         }
         else if (entityEvent.ability == AbilityModel.moveLeft) {
-          entity.GetComponent<EntityModel>().MoveRight();
+          entity.GetComponent<EntityModel>().MoveLeft();
         }
         else if (entityEvent.ability == AbilityModel.moveRight) {
-          entity.GetComponent<EntityModel>().MoveLeft();
+          entity.GetComponent<EntityModel>().MoveRight();
         }
         else if (entityEvent.ability == AbilityModel.moveUp) {
           entity.GetComponent<EntityModel>().MoveUp();
