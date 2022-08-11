@@ -8,7 +8,7 @@ public class TrackController : MonoBehaviour {
   }
 
   public void RegisterEvent(string ability, Vector2 direction,
-  EntityModel entity, Vector2 startPosition) {
+  GameObject entity, Vector2 startPosition) {
 
   }
 
