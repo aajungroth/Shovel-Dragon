@@ -5,36 +5,46 @@ using UnityEngine;
 
 public class GridMovement : MonoBehaviour {
   // Starts the coroutine to move a transform in a direction
-  public void MoveTransformInDirection(Action done, EventModel entityEvent) {
-    Transform targetTransform = entityEvent.entity.transform;
-    float timeToMove = entityEvent.entity
-      .GetComponent<EntityModel>()
-      .timeToMove;
-    Vector3 direction = Vector3.zero;
+  public void MoveTransformInDirection(Vector2 direction, Action done,
+  GameObject entity) {
+    // The transform that will be moved on the view
+    Transform targetTransform = entity.transform;
 
-    if (entityEvent.direction == Vector2.down) {
-      direction = Vector3.down;
+    // The time the transform will take to be moved
+    float timeToMove = entity.GetComponent<EntityModel>().timeToMove;
+
+    // The directoin the transform will moved in
+    Vector3 transformDirection = Vector3.zero;
+
+    // Converts from Vector2 to Vector 3
+    if (direction == Vector2.down) {
+      transformDirection = Vector3.down;
     }
-    else if (entityEvent.direction == Vector2.left) {
-      direction = Vector3.left;
+    else if (direction == Vector2.left) {
+      transformDirection = Vector3.left;
     }
-    else if (entityEvent.direction == Vector2.right) {
-      direction = Vector3.right;
+    else if (direction == Vector2.right) {
+      transformDirection = Vector3.right;
     }
-    else if (entityEvent.direction == Vector2.up) {
-      direction = Vector3.up;
+    else if (direction == Vector2.up) {
+      transformDirection = Vector3.up;
     }
 
     StartCoroutine(
-      MoveTransform(direction, done, targetTransform, timeToMove));
+      MoveTransform(transformDirection, done, targetTransform, timeToMove));
   }
 
   // Moves a transform in the requested time and direction and signals when
   // the movement is complete
   private IEnumerator MoveTransform(Vector3 direction, Action done,
   Transform targetTransform, float timeToMove) {
+    // The position the transform is moving from
     Vector3 originalPosition = targetTransform.position;
+
+    // The position the transform is moving to
     Vector3 targetPosition = originalPosition + direction;
+
+    // The time that has passed during the move
     float timeElapsed = 0;
 
     // This performs the movement across multiple frames
