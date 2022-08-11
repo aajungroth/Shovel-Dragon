@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EntityAI : MonoBehaviour {
-  public virtual EventModel GetEvent(GameObject entity, EventModel entityEvent,
+  // Idles the entity
+  public virtual (string, Vector2) GetEvent(GameObject entity,
   List<GameObject> entityList, string playerAbility, Vector2 playerDirection,
   TrackModel trackModel) {
-    // Returns a default entity with the associated EntityModel
-    entityEvent.entity = entity;
-
-    return entityEvent;
+    return (AbilityModel.none, Vector2.zero);
   }
 }
