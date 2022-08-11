@@ -5,9 +5,13 @@ using UnityEngine;
 public class FixedMovementAI : EntityAI {
   public Vector2 direction = Vector2.right;
 
-  public override EventModel GetEvent(GameObject entity, EventModel entityEvent,
+  // Moves the entity on the X or Y axis based on the direction
+  public override (string, Vector2) GetEvent(GameObject entity,
   List<GameObject> entityList, string playerAbility, Vector2 playerDirection,
   TrackModel trackModel) {
+    // The ability that the entity will perform
+    string ability = AbilityModel.none;
+
     // Tests if moving in the current direction would be invalid
 		if (!ValidateMovement.IsMoveValid(direction, entity, trackModel)) {
 			// Flips the direction
@@ -15,23 +19,20 @@ public class FixedMovementAI : EntityAI {
 			direction.y *= -1;
 		}
 
+    // Gets the ability name based on the direction
     if (direction == Vector2.down) {
-      entityEvent.ability = AbilityModel.moveDown;
+      ability = AbilityModel.moveDown;
     }
     else if (direction == Vector2.left) {
-      entityEvent.ability = AbilityModel.moveLeft;
+      ability = AbilityModel.moveLeft;
     }
     else if (direction == Vector2.right) {
-      entityEvent.ability = AbilityModel.moveRight;
+      ability = AbilityModel.moveRight;
     }
     else if (direction == Vector2.up) {
-      entityEvent.ability = AbilityModel.moveUp;
+      ability = AbilityModel.moveUp;
     }
 
-    entityEvent.direction = direction;
-    entityEvent.endPosition = entityEvent.startPosition + direction;
-    entityEvent.entity = entity;
-
-    return entityEvent;
+    return (ability, direction);
 	}
 }
