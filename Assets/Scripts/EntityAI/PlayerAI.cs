@@ -3,14 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAI : EntityAI {
-  public override EventModel GetEvent(GameObject entity, EventModel entityEvent,
+  // Moves the entity based on player input
+  public override (string, Vector2) GetEvent(GameObject entity,
   List<GameObject> entityList, string playerAbility, Vector2 playerDirection,
   TrackModel trackModel) {
-    entityEvent.ability = playerAbility;
-    entityEvent.direction = playerDirection;
-    entityEvent.endPosition = entityEvent.startPosition + playerDirection;
-    entityEvent.entity = entity;
-
-    return entityEvent;
+    return (playerAbility, playerDirection);
   }
 }
