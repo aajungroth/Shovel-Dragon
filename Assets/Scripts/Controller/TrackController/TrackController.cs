@@ -28,7 +28,7 @@ public class TrackController : MonoBehaviour {
   }
 
   // Stores ability and related information to be used in detecting collisions
-  public void RegisterEvent(string ability, Vector2 direction,
+  public void RegisterAbility(string ability, Vector2 direction,
   GameObject entity, Vector2 startPosition) {
 
   }
