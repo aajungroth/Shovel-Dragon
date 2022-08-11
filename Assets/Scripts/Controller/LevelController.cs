@@ -50,7 +50,7 @@ public class LevelController : MonoBehaviour {
         trackModel);
 
       // Registers the event with the track model 
-      trackController.RegisterEvent(ability, direction, entity, startPosition);
+      trackController.RegisterAbility(ability, direction, entity, startPosition);
 
       // Idling will not update the view
       if (direction == Vector2.zero) {
