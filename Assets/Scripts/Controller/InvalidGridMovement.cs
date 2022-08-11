@@ -5,38 +5,49 @@ using UnityEngine;
 
 public class InvalidGridMovement : MonoBehaviour {
   // Starts the coroutine to feint a transform in a direction
-  public void FeintTransformInDirection(Action done, EventModel entityEvent) {
-    Transform targetTransform = entityEvent.entity.transform;
-    float timeToMove = entityEvent.entity
-      .GetComponent<EntityModel>()
-      .timeToMove;
-    Vector3 direction = Vector3.zero;
+  public void FeintTransformInDirection(Vector2 direction, Action done,
+  GameObject entity) {
+    // The transform that will be moved on the view
+    Transform targetTransform = entity.transform;
+    
+    // The time the transform will take to be moved
+    float timeToMove = entity.GetComponent<EntityModel>().timeToMove;
+    
+    // The direction the transform will be moved in
+    Vector3 transformDirection = Vector3.zero;
 
-    if (entityEvent.direction == Vector2.down) {
-      direction = new Vector3(0, -0.5f, 0);
+    // Converts from Vector2 to Vector3
+    if (direction == Vector2.down) {
+      transformDirection = new Vector3(0, -0.5f, 0);
     }
-    else if (entityEvent.direction == Vector2.left) {
-      direction = new Vector3(-0.5f, 0, 0);
+    else if (direction == Vector2.left) {
+      transformDirection = new Vector3(-0.5f, 0, 0);
     }
-    else if (entityEvent.direction == Vector2.right) {
-      direction = new Vector3(0.5f, 0, 0);
+    else if (direction == Vector2.right) {
+      transformDirection = new Vector3(0.5f, 0, 0);
     }
-    else if (entityEvent.direction == Vector2.up) {
-      direction = new Vector3(0, 0.5f, 0);
+    else if (direction == Vector2.up) {
+      transformDirection = new Vector3(0, 0.5f, 0);
     }
 
     StartCoroutine(
-      FeintTransform(direction, done, targetTransform, timeToMove));
+      FeintTransform(transformDirection, done, targetTransform, timeToMove));
   }
 
   // Feints a transform in the requested time and direction and signals when
   // the movement is complete
   private IEnumerator FeintTransform(Vector3 direction, Action done,
   Transform targetTransform, float timeToMove) {
+    // The position the transform is being moved from
     Vector3 originalPosition = targetTransform.position;
+    
+    // The position the transform is being moved to
     Vector3 targetPosition = originalPosition + direction;
+
+    // The time that has passed during the feint
     float timeElapsed = 0;
 
+    // Tracks if the first half of the feint has been completed
     bool firstHalfInProgress = true;
 
     // This performs the first half of the feint across multiple frames
