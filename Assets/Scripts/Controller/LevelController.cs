@@ -23,7 +23,8 @@ public class LevelController : MonoBehaviour {
   public TrackModel trackModel;
 
   // Takes the player's move and updates game state accordingly
-  public void ExecuteTurn(Action done, string playerAbility, Vector2 playerDirection) {
+  public void ExecuteTurn(Action done, string playerAbility,
+  Vector2 playerDirection) {
     // The list of entities in the game
     List<GameObject> entityList = entityManager.GetList();
 
@@ -45,7 +46,8 @@ public class LevelController : MonoBehaviour {
     // Loop through all of the entities in the game
     foreach (GameObject entity in entityList) {
       // Skips the entity if it is not in the current level
-      if (entity.GetComponent<EntityModel>().GetCurrentLevel() != currentLevel) {
+      if (entity.GetComponent<EntityModel>().GetCurrentLevel() !=
+      currentLevel) {
         continue;
       }
 
@@ -58,7 +60,8 @@ public class LevelController : MonoBehaviour {
         trackModel);
 
       // Registers the event with the track model 
-      trackController.RegisterAbility(ability, direction, entity, startPosition);
+      trackController
+        .RegisterAbility(ability, direction, entity, startPosition);
 
       // Idling will not update the view
       if (direction == Vector2.zero) {
@@ -81,7 +84,8 @@ public class LevelController : MonoBehaviour {
           entity.GetComponent<EntityModel>().MoveUp();
         }
 
-        gridMovement.MoveTransformInDirection(direction, completeAbility, entity);
+        gridMovement
+          .MoveTransformInDirection(direction, completeAbility, entity);
       }
       // Invalid moves will be rendered as an attempted move
       else {
