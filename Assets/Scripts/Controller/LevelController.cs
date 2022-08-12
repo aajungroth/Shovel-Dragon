@@ -30,6 +30,9 @@ public class LevelController : MonoBehaviour {
     // This action is called when an ability has finished rendering on the view
     Action completeAbility = GenerateCompleteAbility(done, entityList.Count);
 
+    // The level the player is currently on
+    int currentLevel = trackModel.GetCurrentLevel();
+
     // The ability that the entities will perform
     string ability = AbilityModel.none;
 
@@ -41,6 +44,11 @@ public class LevelController : MonoBehaviour {
 
     // Loop through all of the entities in the game
     foreach (GameObject entity in entityList) {
+      // Skips the entity if it is not in the current level
+      if (entity.GetComponent<EntityModel>().GetCurrentLevel() != currentLevel) {
+        continue;
+      }
+
       // Gets the starting position of the entity
       startPosition = entity.GetComponent<EntityModel>().GetCurrentPosition();
 
