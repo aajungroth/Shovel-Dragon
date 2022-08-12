@@ -22,6 +22,15 @@ public class TrackController : MonoBehaviour {
   private IDictionary<Vector2, List<GameObject>> entityListByEndPosition =
     new Dictionary<Vector2, List<GameObject>>();
 
+  // Handles garbage collection when collision detection has finished
+  private void ClearData() {
+    entityList = new List<GameObject>();
+    abilityByEntity = new Dictionary<GameObject, string>();
+    directionByEntity = new Dictionary<GameObject, Vector2>();
+    startPositionByEntity = new Dictionary<GameObject, Vector2>();
+    entityListByEndPosition = new Dictionary<Vector2, List<GameObject>>();
+  }
+
   // 
   public void CollisionDetection() {
 
