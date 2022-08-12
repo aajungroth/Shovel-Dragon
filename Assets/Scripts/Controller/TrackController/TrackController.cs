@@ -30,7 +30,29 @@ public class TrackController : MonoBehaviour {
   // Stores ability and related information to be used in detecting collisions
   public void RegisterAbility(string ability, Vector2 direction,
   GameObject entity, Vector2 startPosition) {
+    // The position the entity will be at by the end of the turn
+    Vector2 endPosition = startPosition + direction;
 
+    // The list of entites at a given end position
+    List<GameObject> overlappingEntityList;
+
+    // Store the relevant information for collision detection
+    entityList.Add(entity);
+    abilityByEntity.Add(entity, ability);
+    directionByEntity.Add(entity, direction);
+    startPositionByEntity.Add(entity, startPosition);
+
+    // Adds the entity by the end position to an existing entity list
+    if (entityListByEndPosition.ContainsKey(endPosition)) {
+      overlappingEntityList = entityListByEndPosition[endPosition];
+      overlappingEntityList.Add(entity);
+    }
+    // Creates a new entity list to add the entity list to by end position
+    else {
+      overlappingEntityList = new List<GameObject>();
+      overlappingEntityList.Add(entity);
+      entityListByEndPosition.Add(endPosition, overlappingEntityList);
+    }
   }
 
   // 
