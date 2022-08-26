@@ -31,7 +31,8 @@ public class TrackController : MonoBehaviour {
     entityListByEndPosition = new Dictionary<Vector2, List<GameObject>>();
   }
 
-  // 
+  // Determines which entities passed through each other or
+  // landded on the same space during the turn
   public void CollisionDetection() {
 
   }
