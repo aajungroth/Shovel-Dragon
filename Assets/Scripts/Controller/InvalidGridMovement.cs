@@ -54,7 +54,7 @@ public class InvalidGridMovement : MonoBehaviour {
     while (firstHalfInProgress && timeElapsed < timeToMove) {
       targetTransform.position = Vector3
         .Lerp(originalPosition, targetPosition, timeElapsed / timeToMove);
-      timeElapsed += Time.deltaTime;
+      timeElapsed += Time.fixedDeltaTime;
       yield return null;
     }
 
