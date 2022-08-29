@@ -62,6 +62,8 @@ abstract public class TrackController : MonoBehaviour {
         }
       }
     }
+
+    ClearData();
   }
 
   // Stores ability and related information to be used in detecting collisions
