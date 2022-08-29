@@ -2060,7 +2060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfc1b58686014836bac1913f60366d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventLimit: 1000
 --- !u!4 &912299069
 Transform:
   m_ObjectHideFlags: 0
@@ -2183,6 +2182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ff8d705a61d4be1a3b5a61203c3518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialLevel: 0
   trackText:
   - {fileID: 4900000, guid: 0fb2399526d09452fa17c7b67bb5e6ef, type: 3}
 --- !u!4 &1125936865
@@ -2890,7 +2890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a5fff6751f447989114b7b7dae4818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorList: []
+  doorList:
+  - {fileID: 1499118788}
   keyList: []
   mapList: []
 --- !u!4 &1544230292
