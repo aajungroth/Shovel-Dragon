@@ -3,5 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialController : TrackController {
-  protected override void resolveDoorPlayerCollision(GameObject door, GameObject player) {}
+  public CameraController cameraController;
+
+  protected override void resolveDoorPlayerCollision(GameObject door, GameObject player) {
+    cameraController.MoveCameraRight();
+  }
 }
