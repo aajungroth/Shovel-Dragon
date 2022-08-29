@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrackController : MonoBehaviour {
+abstract public class TrackController : MonoBehaviour {
   // The list of entities that performed abilities during the turn
   private List<GameObject> entityList = new List<GameObject>();
 
