@@ -34,7 +34,34 @@ public class TrackController : MonoBehaviour {
   // Determines which entities passed through each other or
   // landded on the same space during the turn
   public void CollisionDetection() {
+    string ability = "";
+    List<GameObject> colliderEntityList;
+    Vector2 direction = Vector2.zero;
+    Vector2 endPosition = Vector2.zero;
+    Vector2 startPosition = Vector2.zero; 
 
+    // Checks each entity to see what it collides with
+    foreach (GameObject entity in entityList) {
+      ability = abilityByEntity[entity];
+      direction = directionByEntity[entity];
+      startPosition = startPositionByEntity[Entity];
+
+      if (ability.Split(' ')[0] == AbilityModel.moveDown.Split(' ')[0]) {
+        endPosition = startPosition + direction;
+        colliderEntityList = entityListByEndPosition[endPosition];
+
+        foreach (GameObject colliderEntity in colliderEntityList) {
+          if (entity.GetComponent<PlayerModel>() != null &&
+          colliderEntity.GetComponent<DoorModel>() != null) {
+            resolveDoorPlayerCollision(colliderEntity, entity);
+          }
+          else if(entity.GetComponent<DoorModel>() != null &&
+          colliderEntity.GetComponent<PlayerModel>() != null) {
+            resolveDoorPlayerCollision(entity, colliderEntity);
+          }
+        }
+      }
+    }
   }
 
   // Stores ability and related information to be used in detecting collisions
@@ -69,4 +96,8 @@ public class TrackController : MonoBehaviour {
   protected void ResetLevel() {
 
   }
+
+  // Collision resolution methods to be overrided
+  // in derived classes for specific tracks
+  abstract protected void resolveDoorPlayerCollision(GameObject door, GameObject player);
 }
