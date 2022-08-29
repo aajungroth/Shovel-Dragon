@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 abstract public class TrackController : MonoBehaviour {
-  // The list of entities that performed abilities during the turn
-  private List<GameObject> entityList = new List<GameObject>();
-
   // The abilities that were performed by entities during the turn
   private IDictionary<GameObject, string> abilityByEntity =
     new Dictionary<GameObject, string>();
@@ -14,21 +11,24 @@ abstract public class TrackController : MonoBehaviour {
   private IDictionary<GameObject, Vector2> directionByEntity =
     new Dictionary<GameObject, Vector2>();
 
-  // The positions the entities started the turn in
-  private IDictionary<GameObject, Vector2> startPositionByEntity =
-    new Dictionary<GameObject, Vector2>();
+  // The list of entities that performed abilities during the turn
+  private List<GameObject> entityList = new List<GameObject>();
 
   // The positions the entities ended the turn in
   private IDictionary<Vector2, List<GameObject>> entityListByEndPosition =
     new Dictionary<Vector2, List<GameObject>>();
 
+  // The positions the entities started the turn in
+  private IDictionary<GameObject, Vector2> startPositionByEntity =
+    new Dictionary<GameObject, Vector2>();
+
   // Handles garbage collection when collision detection has finished
   private void ClearData() {
-    entityList = new List<GameObject>();
     abilityByEntity = new Dictionary<GameObject, string>();
     directionByEntity = new Dictionary<GameObject, Vector2>();
-    startPositionByEntity = new Dictionary<GameObject, Vector2>();
+    entityList = new List<GameObject>();
     entityListByEndPosition = new Dictionary<Vector2, List<GameObject>>();
+    startPositionByEntity = new Dictionary<GameObject, Vector2>();
   }
 
   // Determines which entities passed through each other or
