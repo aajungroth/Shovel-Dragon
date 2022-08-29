@@ -75,8 +75,10 @@ abstract public class TrackController : MonoBehaviour {
     // The list of entites at a given end position
     List<GameObject> overlappingEntityList;
 
-    // Store the relevant information for collision detection
+    // Store the entities for collision detection
     entityList.Add(entity);
+
+    // Store the information by the entity it is associated with
     abilityByEntity.Add(entity, ability);
     directionByEntity.Add(entity, direction);
     startPositionByEntity.Add(entity, startPosition);
@@ -101,5 +103,6 @@ abstract public class TrackController : MonoBehaviour {
 
   // Collision resolution methods to be overrided
   // in derived classes for specific tracks
-  abstract protected void resolveDoorPlayerCollision(GameObject door, GameObject player);
+  abstract protected void resolveDoorPlayerCollision(
+    GameObject door, GameObject player);
 }
