@@ -44,7 +44,7 @@ abstract public class TrackController : MonoBehaviour {
     foreach (GameObject entity in entityList) {
       ability = abilityByEntity[entity];
       direction = directionByEntity[entity];
-      startPosition = startPositionByEntity[Entity];
+      startPosition = startPositionByEntity[entity];
 
       if (ability.Split(' ')[0] == AbilityModel.moveDown.Split(' ')[0]) {
         endPosition = startPosition + direction;
