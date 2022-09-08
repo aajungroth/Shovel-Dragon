@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour {
-  public float panDistance = 19;
   public float panTime = 1f;
 
-  public void MoveCameraDown() {
+  public void MoveCameraDown(float panDistance) {
     StartCoroutine(MoveCamera(Vector3.down * panDistance));
   }
 
-  public void MoveCameraLeft() {
+  public void MoveCameraLeft(float panDistance) {
     StartCoroutine(MoveCamera(Vector3.left * panDistance));
   }
 
-  public void MoveCameraRight() {
+  public void MoveCameraRight(float panDistance) {
     StartCoroutine(MoveCamera(Vector3.right * panDistance));
   }
 
-  public void MoveCameraUp() {
+  public void MoveCameraUp(float panDistance) {
     StartCoroutine(MoveCamera(Vector3.up * panDistance));
   }
 
