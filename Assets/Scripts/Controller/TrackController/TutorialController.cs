@@ -7,9 +7,9 @@ public class TutorialController : TrackController {
   public TrackModel trackModel;
 
   protected override void resolveDoorPlayerCollision(GameObject door, GameObject player) {
-    trackModel.SetCurrentLevel(trackModel.GetCurrentLevel()++);
+    trackModel.SetCurrentLevel(trackModel.GetCurrentLevel() + 1);
     player.GetComponent<PlayerModel>().SetCurrentLevel(
-      player.GetComponent<PlayerModel>().GetCurrentLevel()++);
+      player.GetComponent<PlayerModel>().GetCurrentLevel() + 1);
     player.GetComponent<PlayerModel>().SetCurrentPosition(
       player.GetComponent<PlayerModel>().initialPosition);
     player.GetComponent<PlayerModel>().SetCurrentDirection("right");
