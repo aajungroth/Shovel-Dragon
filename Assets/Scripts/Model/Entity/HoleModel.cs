@@ -6,9 +6,6 @@ public class HoleModel : EntityModel {
   // The size the hole will default to win the game starts
   public char defaultSize = 'S';
 
-  // The starting position of the hole
-  public Vector2 initialPosition;
-
   // Sprite for large holes certain entities can be burried in
   public Sprite largeHole;
 
