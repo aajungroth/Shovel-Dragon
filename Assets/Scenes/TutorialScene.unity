@@ -4861,6 +4861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 1339791807}
+  trackModel: {fileID: 1125936864}
 --- !u!4 &912299069
 Transform:
   m_ObjectHideFlags: 0
@@ -5676,7 +5677,7 @@ MonoBehaviour:
   AIName: none
   initialDirection: right
   initialLevel: 0
-  intialPosition: {x: 10, y: 5}
+  initialPosition: {x: 10, y: 5}
   timeToMove: 0.2
   isLocked: 1
 --- !u!1 &1544230290
@@ -5911,6 +5912,6 @@ MonoBehaviour:
   AIName: player
   initialDirection: right
   initialLevel: 0
-  intialPosition: {x: 5, y: 5}
+  initialPosition: {x: 5, y: 5}
   timeToMove: 0.2
   followerList: []
