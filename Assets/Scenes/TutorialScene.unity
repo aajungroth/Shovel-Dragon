@@ -5011,7 +5011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AIName: none
   initialDirection: right
-  initialLevel: 1
+  initialLevel: 2
   initialPosition: {x: 10, y: 5}
   timeToMove: 0.2
   isLocked: 1
