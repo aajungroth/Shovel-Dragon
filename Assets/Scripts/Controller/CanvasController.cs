@@ -8,7 +8,7 @@ public class CanvasController : MonoBehaviour {
 
   }
 
-  // Disables the standard UI and enables the level clear screen
+  // Covers the standard UI and enables the level clear screen
   public void displayLevelClear() {
 
   }
