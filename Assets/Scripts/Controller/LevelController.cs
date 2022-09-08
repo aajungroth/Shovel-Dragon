@@ -48,6 +48,7 @@ public class LevelController : MonoBehaviour {
       // Skips the entity if it is not in the current level
       if (entity.GetComponent<EntityModel>().GetCurrentLevel() !=
       currentLevel) {
+        completeAbility();
         continue;
       }
 
