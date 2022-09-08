@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24faccf5c33b84d6fb0736aec3736138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelClearPanel: {fileID: 909895637}
 --- !u!1 &212116282
 GameObject:
   m_ObjectHideFlags: 0
@@ -5059,7 +5060,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 909895638}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5411,8 +5412,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 749174405}
-  - {fileID: 1681805587}
   - {fileID: 537702350}
+  - {fileID: 1681805587}
   - {fileID: 1588093497}
   - {fileID: 434673651}
   - {fileID: 1362233712}
@@ -5492,6 +5493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 1339791807}
+  canvasController: {fileID: 192366862}
   trackModel: {fileID: 1125936864}
 --- !u!4 &912299069
 Transform:
@@ -6893,7 +6895,7 @@ RectTransform:
   m_Children:
   - {fileID: 215865605}
   m_Father: {fileID: 909895638}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
