@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TutorialController : TrackController {
   public CameraController cameraController;
+  public CanvasController canvasController;
   public TrackModel trackModel;
 
   protected override void resolveDoorPlayerCollision(GameObject door,
@@ -22,7 +23,7 @@ public class TutorialController : TrackController {
       cameraController.MoveCameraRight();
     }
     else if (doorRole[doorRole.Length - 1] == '2') {
-      Debug.Log("Level Compelete");
+      canvasController.displayLevelClear();
     }
   }
 }
