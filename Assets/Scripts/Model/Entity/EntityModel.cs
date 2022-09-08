@@ -13,7 +13,7 @@ public class EntityModel : MonoBehaviour {
   public int initialLevel = 0;
 
   // The tile in the level that the entity starts on
-  public Vector2 intialPosition;
+  public Vector2 initialPosition;
 
   // The time it takes for movement to be completed
   public float timeToMove = 0.2f;
@@ -35,7 +35,7 @@ public class EntityModel : MonoBehaviour {
     // Set private variables based on initial data
     currentDirection = initialDirection;
     currentLevel = initialLevel;
-    currentPosition = intialPosition;
+    currentPosition = initialPosition;
   }
 
   // Gets the entity's current direction
