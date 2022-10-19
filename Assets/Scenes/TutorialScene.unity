@@ -5420,6 +5420,7 @@ MonoBehaviour:
   buttonUp: {fileID: 1293428461}
   isInputEnabled: 1
   levelController: {fileID: 1277617695}
+  playerAninmator: {fileID: 2024430544}
 --- !u!4 &596811941
 Transform:
   m_ObjectHideFlags: 0
@@ -7570,7 +7571,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 805c0632781dd45eeb9b26a8140f4c37, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
