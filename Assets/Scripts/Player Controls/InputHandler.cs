@@ -54,7 +54,11 @@ public class InputHandler : MonoBehaviour {
 
   // Asks the level controller to move the player right
   private void RequestMoveRight() {
-    if (isInputEnabled) {
+    // Gets the normalized time to determine if a loop of the animation has completed
+    float normalizedTimeInfo = playerAninmator
+      .GetCurrentAnimatorStateInfo(0).normalizedTime;
+
+    if (isInputEnabled && normalizedTimeInfo > 1) {
       playerAninmator.SetTrigger(jumpTrigger);
       isInputEnabled = false;
       levelController.HandleMoveRight(EnableInput);
