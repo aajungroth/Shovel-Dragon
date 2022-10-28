@@ -36,9 +36,19 @@ public class InputHandler : MonoBehaviour {
     isInputEnabled = true;
   }
 
+  // Tests that the previous move and animation have completed
+  private bool isStationary() {
+    // Gets the normalized time to determine if a loop of the animation has completed
+    float normalizedTimeInfo = playerAninmator
+      .GetCurrentAnimatorStateInfo(0).normalizedTime;
+
+    return isInputEnabled && normalizedTimeInfo > 1;
+  }
+
   // Asks the level controller to move the player down
   private void RequestMoveDown() {
-    if (isInputEnabled) {
+    if (isStationary()) {
+      playerAninmator.SetTrigger(jumpTrigger);
       isInputEnabled = false;
       levelController.HandleMoveDown(EnableInput);
     }
@@ -46,7 +56,8 @@ public class InputHandler : MonoBehaviour {
 
   // Asks the level controller to move the player left
   private void RequestMoveLeft() {
-   if (isInputEnabled) {
+    if (isStationary()) {
+      playerAninmator.SetTrigger(jumpTrigger);
       isInputEnabled = false;
       levelController.HandleMoveLeft(EnableInput);
     } 
@@ -54,11 +65,7 @@ public class InputHandler : MonoBehaviour {
 
   // Asks the level controller to move the player right
   private void RequestMoveRight() {
-    // Gets the normalized time to determine if a loop of the animation has completed
-    float normalizedTimeInfo = playerAninmator
-      .GetCurrentAnimatorStateInfo(0).normalizedTime;
-
-    if (isInputEnabled && normalizedTimeInfo > 1) {
+    if (isStationary()) {
       playerAninmator.SetTrigger(jumpTrigger);
       isInputEnabled = false;
       levelController.HandleMoveRight(EnableInput);
@@ -67,7 +74,8 @@ public class InputHandler : MonoBehaviour {
 
   // Asks the level controller to move the player up
   private void RequestMoveUp() {
-    if (isInputEnabled) {
+    if (isStationary()) {
+      playerAninmator.SetTrigger(jumpTrigger);
       isInputEnabled = false;
       levelController.HandleMoveUp(EnableInput);
     }
