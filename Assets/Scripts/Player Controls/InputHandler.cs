@@ -20,6 +20,9 @@ public class InputHandler : MonoBehaviour {
   // Used to trigger animations for the player
   public Animator playerAninmator;
 
+  // The name of the trigger fo the player's jump animation
+  const string jumpTrigger = "Jump";
+
   // Start is called before the first frame update
   void Start() {
     buttonDown.onClick.AddListener(RequestMoveDown);
@@ -52,7 +55,7 @@ public class InputHandler : MonoBehaviour {
   // Asks the level controller to move the player right
   private void RequestMoveRight() {
     if (isInputEnabled) {
-      playerAninmator.SetTrigger("Jump");
+      playerAninmator.SetTrigger(jumpTrigger);
       isInputEnabled = false;
       levelController.HandleMoveRight(EnableInput);
     }
